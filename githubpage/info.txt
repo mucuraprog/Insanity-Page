@@ -130,6 +130,12 @@ Overview Build Results
 === Seraph ===
   PvE DPS: 368,141,164  |  Max Hit: 148,082,484
   [PvE Melee]  88,808,352 – 148,082,484  DPS: 368,141,164
+  [Priests Grasp]  31,478,835 – 133,201,207  DPS: 51,462,513
+  [Power Fist]  4,259,158 – 18,152,026  DPS: 18,676,360
+  [Burst Crack]  3,851,084 – 16,439,111  DPS: 16,908,834
+  [Straight Punch]  3,542,231 – 15,140,935  DPS: 15,569,616
+  [Soul of Rhisis]  9,362,120 – 41,191,444  DPS: 5,055,356
+  [Merkaba Hanzelrusha]  6,574,360 – 28,360,570  DPS: 1,746,746
 
 === Slayer ===
   PvE DPS: 723,781,652  |  Max Hit: 267,830,149
