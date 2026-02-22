@@ -179,13 +179,21 @@ const _FALLBACK_DATA = [
   {
     id: 'seraph',
     name: 'Seraph',
-    type: 'Magic',
-    typeBadge: 'magic',
+    type: 'Melee',
+    typeBadge: 'melee',
     logo: 'icons/classes/FF_Seraph_Logo.png',
-    accent: '#60c0f0',
+    accent: '#f5d060',
     pve_dps: 368141164,
     max_pve_dmg: 148082484,
-    skills: []
+    skills: [
+      { name: 'PvE Melee',             icon: 'melee',               min: 88808352,  max: 148082484, avg_dps: 368141164 },
+      { name: 'Priests Grasp',         icon: 'priests_grasp',       min: 31478835,  max: 133201207, avg_dps: 51462513  },
+      { name: 'Power Fist',            icon: 'power_fist',          min: 4259158,   max: 18152026,  avg_dps: 18676360  },
+      { name: 'Burst Crack',           icon: 'burst_crack',         min: 3851084,   max: 16439111,  avg_dps: 16908834  },
+      { name: 'Straight Punch',        icon: 'straight_punch',      min: 3542231,   max: 15140935,  avg_dps: 15569616  },
+      { name: 'Soul of Rhisis',        icon: 'soul_of_rhisis',      min: 9362120,   max: 41191444,  avg_dps: 5055356   },
+      { name: 'Merkaba Hanzelrusha',   icon: 'merkaba_hanzelrusha', min: 6574360,   max: 28360570,  avg_dps: 1746746   },
+    ]
   },
   {
     id: 'slayer',
