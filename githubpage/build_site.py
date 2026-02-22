@@ -128,8 +128,8 @@ skill_icons = [
     ("pandemonium",         "Skill_WndlMadHurricane.dds"),
     ("harlequins_greeting", "Skill_JstYoyomaster.dds"),
     # === SERAPH / RINGMASTER ===
-    ("priests_grasp",       "Skill_FlorDivineStrike.dds"),
-    ("soul_of_rhisis",      "skill_RinSupSpirit.dds"),
+    ("priests_grasp",       "Skill_FlorFetters.dds"),
+    ("soul_of_rhisis",      "Skill_FlorAbsoluteBarrier.dds"),
     ("merkaba_hanzelrusha", "skill_RinSupAnzelr.dds"),
     # === FORCEMASTER / KNUCKLE ===
     ("straight_punch",      "Skill_VagOneCleanh.dds"),
