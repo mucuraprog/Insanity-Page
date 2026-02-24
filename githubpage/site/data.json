@@ -256,148 +256,148 @@
     "typeBadge": "ranged",
     "logo": "icons/classes/FF_Crack_Logo.png",
     "accent": "#7ad07a",
-    "pve_dps": 412793913,
-    "max_pve_dmg": 238716471,
+    "pve_dps": 136621465,
+    "max_pve_dmg": 70803510,
     "skills": [
       {
         "name": "PvE Melee",
         "icon": "melee",
-        "min": 143117899,
-        "max": 238716471,
-        "avg_dps": 412793913
+        "min": 55571347,
+        "max": 70803510,
+        "avg_dps": 136621465
       },
       {
         "name": "Ice Arrow",
         "icon": "ice_arrow",
-        "min": 59696228,
-        "max": 59715981,
-        "avg_dps": 71647325
+        "min": 59633085,
+        "max": 59652838,
+        "avg_dps": 71571553
       },
       {
         "name": "Piercing Arrow",
         "icon": "piercing_arrow",
-        "min": 39512985,
-        "max": 39546564,
-        "avg_dps": 65884275
+        "min": 39449842,
+        "max": 39483421,
+        "avg_dps": 65779034
       },
       {
         "name": "Celestial Barrage",
         "icon": "celestial_barrage",
-        "min": 42547779,
-        "max": 42610988,
-        "avg_dps": 63869075
+        "min": 42484636,
+        "max": 42547845,
+        "avg_dps": 63774360
       },
       {
         "name": "Flame Arrow",
         "icon": "flame_arrow",
-        "min": 36043237,
-        "max": 36068916,
-        "avg_dps": 60094662
+        "min": 35980094,
+        "max": 36005773,
+        "avg_dps": 59989422
       },
       {
         "name": "Silent Shot",
         "icon": "silent_shot",
-        "min": 31164730,
-        "max": 31170261,
-        "avg_dps": 51946864
+        "min": 31101587,
+        "max": 31107118,
+        "avg_dps": 51841624
       },
       {
         "name": "Poison Arrow",
         "icon": "poison_arrow",
-        "min": 30218185,
-        "max": 30247813,
-        "avg_dps": 50389339
+        "min": 30155042,
+        "max": 30184670,
+        "avg_dps": 50284098
       },
       {
         "name": "Condor Dive",
         "icon": "condor_dive",
-        "min": 30902218,
-        "max": 30980438,
-        "avg_dps": 30941328
+        "min": 30839075,
+        "max": 30917295,
+        "avg_dps": 30878185
       },
       {
         "name": "Piercing Formation",
         "icon": "piercing_formation",
-        "min": 7025430,
-        "max": 7088637,
-        "avg_dps": 21171100
+        "min": 6962287,
+        "max": 7025494,
+        "avg_dps": 20981671
       },
       {
         "name": "Cross Line",
         "icon": "cross_line",
-        "min": 13022527,
-        "max": 13342520,
-        "avg_dps": 15819028
+        "min": 12959384,
+        "max": 13279377,
+        "avg_dps": 15743256
       },
       {
         "name": "Arrow Rain",
         "icon": "arrow_rain",
-        "min": 30364551,
-        "max": 30400106,
-        "avg_dps": 15191164
+        "min": 30301408,
+        "max": 30336963,
+        "avg_dps": 15159592
       },
       {
         "name": "Auto Shot",
         "icon": "auto_shot",
-        "min": 7902644,
-        "max": 7908175,
-        "avg_dps": 13175946
+        "min": 7839501,
+        "max": 7845032,
+        "avg_dps": 13070705
       },
       {
         "name": "Snatch",
         "icon": "snatch",
-        "min": 4083076,
-        "max": 4088409,
-        "avg_dps": 6809707
+        "min": 4019933,
+        "max": 4025266,
+        "avg_dps": 6704466
       },
       {
         "name": "Deadly swing",
         "icon": "deadly_swing",
-        "min": 3901945,
-        "max": 3907476,
-        "avg_dps": 6507980
+        "min": 3838802,
+        "max": 3844333,
+        "avg_dps": 6402740
       },
       {
         "name": "Aimed Shot",
         "icon": "aimed_shot",
-        "min": 45569341,
-        "max": 45585932,
-        "avg_dps": 5300679
+        "min": 45506198,
+        "max": 45522789,
+        "avg_dps": 5293335
       },
       {
         "name": "Junk Arrow",
         "icon": "junk_arrow",
-        "min": 2700194,
-        "max": 2724885,
-        "avg_dps": 4520989
-      },
-      {
-        "name": "Slow Step",
-        "icon": "slow_step",
-        "min": 1911471,
-        "max": 1917002,
-        "avg_dps": 3190457
+        "min": 2637051,
+        "max": 2661742,
+        "avg_dps": 4415749
       },
       {
         "name": "Triple shot",
         "icon": "triple_shot",
-        "min": 33133674,
-        "max": 33159351,
-        "avg_dps": 3125716
+        "min": 33070531,
+        "max": 33096208,
+        "avg_dps": 3119761
+      },
+      {
+        "name": "Slow Step",
+        "icon": "slow_step",
+        "min": 1848328,
+        "max": 1853859,
+        "avg_dps": 3085217
       },
       {
         "name": "Silent Arrow",
         "icon": "silent_arrow",
-        "min": 10644507,
-        "max": 10668211,
-        "avg_dps": 683072
+        "min": 10581364,
+        "max": 10605068,
+        "avg_dps": 679025
       },
       {
         "name": "Counterattack",
         "icon": "counterattack",
-        "min": 2129738,
-        "max": 2135072,
-        "avg_dps": 83377
+        "min": 2066595,
+        "max": 2071929,
+        "avg_dps": 80908
       }
     ]
   },
@@ -408,99 +408,99 @@
     "typeBadge": "melee",
     "logo": "icons/classes/FF_FM_Logo.png",
     "accent": "#e06060",
-    "pve_dps": 580629156,
-    "max_pve_dmg": 233543249,
+    "pve_dps": 192169301,
+    "max_pve_dmg": 69267220,
     "skills": [
       {
         "name": "PvE Melee",
         "icon": "melee",
-        "min": 140078992,
-        "max": 233543249,
-        "avg_dps": 580629156
+        "min": 54389549,
+        "max": 69267220,
+        "avg_dps": 192169301
       },
       {
         "name": "Crushing Cascade",
         "icon": "crushing_cascade",
-        "min": 61477867,
-        "max": 61479634,
-        "avg_dps": 86070250
+        "min": 61414724,
+        "max": 61416491,
+        "avg_dps": 85981850
       },
       {
         "name": "Piercing Serpent",
         "icon": "piercing_serpent",
-        "min": 47618655,
-        "max": 47631229,
-        "avg_dps": 59531177
+        "min": 47555512,
+        "max": 47568086,
+        "avg_dps": 59452248
       },
       {
         "name": "Bgvur Tialbold",
         "icon": "bgvur_tialbold",
-        "min": 15070687,
-        "max": 15081295,
-        "avg_dps": 27136783
+        "min": 15007544,
+        "max": 15018152,
+        "avg_dps": 27023126
       },
       {
         "name": "Power Fist",
         "icon": "power_fist",
-        "min": 7309112,
-        "max": 7312845,
-        "avg_dps": 12185207
+        "min": 7245969,
+        "max": 7249702,
+        "avg_dps": 12079967
       },
       {
         "name": "Burst Crack",
         "icon": "burst_crack",
-        "min": 6451212,
-        "max": 6454945,
-        "avg_dps": 10755345
+        "min": 6388069,
+        "max": 6391802,
+        "avg_dps": 10650105
       },
       {
         "name": "Sonichand",
         "icon": "sonichand",
-        "min": 5861073,
-        "max": 5863824,
-        "avg_dps": 9770942
+        "min": 5797930,
+        "max": 5800681,
+        "avg_dps": 9665702
       },
       {
         "name": "Belial Smashing",
         "icon": "belial_smashing",
-        "min": 5831606,
-        "max": 5834356,
-        "avg_dps": 9721829
+        "min": 5768463,
+        "max": 5771213,
+        "avg_dps": 9616588
       },
       {
         "name": "Straight Punch",
         "icon": "straight_punch",
-        "min": 5674249,
-        "max": 5678178,
-        "avg_dps": 9460545
+        "min": 5611106,
+        "max": 5615035,
+        "avg_dps": 9355304
       },
       {
         "name": "Skybreaker",
         "icon": "skybreaker",
-        "min": 46295167,
-        "max": 46296934,
-        "avg_dps": 8268474
+        "min": 46232024,
+        "max": 46233791,
+        "avg_dps": 8257197
       },
       {
         "name": "Baraqijal Esna",
         "icon": "baraqijal_esna",
-        "min": 6277156,
-        "max": 6277942,
-        "avg_dps": 6277549
+        "min": 6214013,
+        "max": 6214799,
+        "avg_dps": 6214406
       },
       {
         "name": "Blood Fist",
         "icon": "blood_fist",
-        "min": 5191962,
-        "max": 5194712,
-        "avg_dps": 332892
+        "min": 5128819,
+        "max": 5131569,
+        "avg_dps": 328845
       },
       {
         "name": "Asalraalaikum",
         "icon": "asalraalaikum",
-        "min": 2211018,
-        "max": 2227520,
-        "avg_dps": 148025
+        "min": 2147875,
+        "max": 2164377,
+        "avg_dps": 143813
       }
     ]
   },
@@ -511,148 +511,148 @@
     "typeBadge": "ranged",
     "logo": "icons/classes/FF_Harle_Logo.png",
     "accent": "#f0a040",
-    "pve_dps": 523302809,
-    "max_pve_dmg": 254799657,
+    "pve_dps": 173216231,
+    "max_pve_dmg": 75579729,
     "skills": [
       {
         "name": "PvE Melee",
         "icon": "melee",
-        "min": 152825689,
-        "max": 254799657,
-        "avg_dps": 523302809
+        "min": 59346599,
+        "max": 75579729,
+        "avg_dps": 173216231
       },
       {
         "name": "Spiral Vortex",
         "icon": "spiral_vortex",
-        "min": 41093384,
-        "max": 41095166,
-        "avg_dps": 123282825
+        "min": 41030241,
+        "max": 41032023,
+        "avg_dps": 123093396
       },
       {
         "name": "Pandemonium",
         "icon": "pandemonium",
-        "min": 38261101,
-        "max": 38447214,
-        "avg_dps": 63924874
+        "min": 38197958,
+        "max": 38384071,
+        "avg_dps": 63819633
       },
       {
         "name": "Cross Line",
         "icon": "cross_line",
-        "min": 50565943,
-        "max": 50885107,
-        "avg_dps": 60870630
+        "min": 50502800,
+        "max": 50821964,
+        "avg_dps": 60794858
       },
       {
         "name": "Vital stab",
         "icon": "vital_stab",
-        "min": 33480373,
-        "max": 33497004,
-        "avg_dps": 55815597
+        "min": 33417230,
+        "max": 33433861,
+        "avg_dps": 55710356
       },
       {
         "name": "Deadly swing",
         "icon": "deadly_swing",
-        "min": 12974283,
-        "max": 12978243,
-        "avg_dps": 21627537
+        "min": 12911140,
+        "max": 12915100,
+        "avg_dps": 21522297
       },
       {
         "name": "Silent Shot",
         "icon": "silent_shot",
-        "min": 7792026,
-        "max": 7795788,
-        "avg_dps": 12990104
+        "min": 7728883,
+        "max": 7732645,
+        "avg_dps": 12884864
       },
       {
         "name": "Sneak Stab",
         "icon": "sneak_stab",
-        "min": 6530022,
-        "max": 6540712,
-        "avg_dps": 10892496
-      },
-      {
-        "name": "Slow Step",
-        "icon": "slow_step",
-        "min": 4176087,
-        "max": 4179849,
-        "avg_dps": 6963419
+        "min": 6466879,
+        "max": 6477569,
+        "avg_dps": 10787255
       },
       {
         "name": "Hit of Penya",
         "icon": "hit_of_penya",
-        "min": 76196079,
-        "max": 76238846,
-        "avg_dps": 6928167
+        "min": 76132936,
+        "max": 76175703,
+        "avg_dps": 6922427
+      },
+      {
+        "name": "Slow Step",
+        "icon": "slow_step",
+        "min": 4112944,
+        "max": 4116706,
+        "avg_dps": 6858178
       },
       {
         "name": "Enchant of Nature",
         "icon": "enchant_of_nature",
-        "min": 6264711,
-        "max": 6265503,
-        "avg_dps": 6265107
+        "min": 6201568,
+        "max": 6202360,
+        "avg_dps": 6201964
       },
       {
         "name": "Enchant of Iron",
         "icon": "enchant_of_iron",
-        "min": 5114770,
-        "max": 5115562,
-        "avg_dps": 5115166
+        "min": 5051627,
+        "max": 5052419,
+        "avg_dps": 5052023
       },
       {
         "name": "Harlequins Greeting",
         "icon": "harlequins_greeting",
-        "min": 25815289,
-        "max": 26001402,
-        "avg_dps": 4627230
+        "min": 25752146,
+        "max": 25938259,
+        "avg_dps": 4615953
       },
       {
         "name": "Auto Shot",
         "icon": "auto_shot",
-        "min": 2585415,
-        "max": 2589177,
-        "avg_dps": 4312246
+        "min": 2522272,
+        "max": 2526034,
+        "avg_dps": 4207005
       },
       {
         "name": "Arrow Rain",
         "icon": "arrow_rain",
-        "min": 7614229,
-        "max": 7648284,
-        "avg_dps": 3815628
+        "min": 7551086,
+        "max": 7585141,
+        "avg_dps": 3784056
       },
       {
         "name": "Snatch",
         "icon": "snatch",
-        "min": 2254174,
-        "max": 2258134,
-        "avg_dps": 3760331
+        "min": 2191031,
+        "max": 2194991,
+        "avg_dps": 3655091
       },
       {
         "name": "Junk Arrow",
         "icon": "junk_arrow",
-        "min": 1492694,
-        "max": 1515662,
-        "avg_dps": 2507013
+        "min": 1429551,
+        "max": 1452519,
+        "avg_dps": 2401773
       },
       {
         "name": "Aimed Shot",
         "icon": "aimed_shot",
-        "min": 12807969,
-        "max": 12819255,
-        "avg_dps": 1490223
+        "min": 12744826,
+        "max": 12756112,
+        "avg_dps": 1482879
       },
       {
         "name": "Void Step",
         "icon": "void_step",
-        "min": 21168601,
-        "max": 21170383,
-        "avg_dps": 692242
+        "min": 21105458,
+        "max": 21107240,
+        "avg_dps": 690177
       },
       {
         "name": "Counterattack",
         "icon": "counterattack",
-        "min": 5013200,
-        "max": 5017160,
-        "avg_dps": 196093
+        "min": 4950057,
+        "max": 4954017,
+        "avg_dps": 193624
       }
     ]
   },
@@ -857,22 +857,22 @@
     "typeBadge": "melee",
     "logo": "icons/classes/FF_Seraph_Logo.png",
     "accent": "#f5d060",
-    "pve_dps": 368141164,
-    "max_pve_dmg": 148082484,
+    "pve_dps": 121742931,
+    "max_pve_dmg": 43887963,
     "skills": [
-      {
-        "name": "PvE Melee",
-        "icon": "melee",
-        "min": 88808352,
-        "max": 148082484,
-        "avg_dps": 368141164
-      },
       {
         "name": "Merkaba Hanzelrusha",
         "icon": "merkaba_hanzelrusha",
         "min": 8171444,
         "max": 35068324,
         "avg_dps": 259438608
+      },
+      {
+        "name": "PvE Melee",
+        "icon": "melee",
+        "min": 34450967,
+        "max": 43887963,
+        "avg_dps": 121742931
       },
       {
         "name": "Soul of Rhisis",
@@ -918,141 +918,141 @@
     "typeBadge": "melee",
     "logo": "icons/classes/FF_Slayer_Logo.png",
     "accent": "#e05080",
-    "pve_dps": 723781652,
-    "max_pve_dmg": 267830149,
+    "pve_dps": 239591597,
+    "max_pve_dmg": 79449390,
     "skills": [
       {
         "name": "PvE Melee",
         "icon": "melee",
-        "min": 160648589,
-        "max": 267830149,
-        "avg_dps": 723781652
+        "min": 62388837,
+        "max": 79449390,
+        "avg_dps": 239591597
       },
       {
         "name": "Cross of Blood",
         "icon": "cross_of_blood",
-        "min": 101885419,
-        "max": 101915416,
-        "avg_dps": 163040668
+        "min": 101822276,
+        "max": 101852273,
+        "avg_dps": 162939639
       },
       {
         "name": "Blindside",
         "icon": "blindside",
-        "min": 55437847,
-        "max": 55441888,
-        "avg_dps": 92401627
+        "min": 55374704,
+        "max": 55378745,
+        "avg_dps": 92296386
       },
       {
         "name": "Cross Strike",
         "icon": "cross_strike",
-        "min": 42096267,
-        "max": 42139668,
-        "avg_dps": 38289444
+        "min": 42033124,
+        "max": 42076525,
+        "avg_dps": 38232040
       },
       {
         "name": "Keenwheel",
         "icon": "keenwheel",
-        "min": 19520402,
-        "max": 19524657,
-        "avg_dps": 32538199
+        "min": 19457259,
+        "max": 19461514,
+        "avg_dps": 32432959
       },
       {
         "name": "Slash",
         "icon": "slash",
-        "min": 17741836,
-        "max": 17746092,
-        "avg_dps": 29573864
+        "min": 17678693,
+        "max": 17682949,
+        "avg_dps": 29468624
       },
       {
         "name": "Blade Dance",
         "icon": "blade_dance",
-        "min": 43478697,
-        "max": 43481676,
-        "avg_dps": 27175116
+        "min": 43415554,
+        "max": 43418533,
+        "avg_dps": 27135652
       },
       {
         "name": "Shadow Ricochet",
         "icon": "shadow_ricochet",
-        "min": 27553092,
-        "max": 27555007,
-        "avg_dps": 25049386
+        "min": 27489949,
+        "max": 27491864,
+        "avg_dps": 24991983
       },
       {
         "name": "Sonic Blade",
         "icon": "sonic_blade",
-        "min": 72508882,
-        "max": 72586322,
-        "avg_dps": 20153723
+        "min": 72445739,
+        "max": 72523179,
+        "avg_dps": 20136182
       },
       {
         "name": "Hit Reflect",
         "icon": "hit_reflect",
-        "min": 5291455,
-        "max": 5295496,
-        "avg_dps": 8822635
+        "min": 5228312,
+        "max": 5232353,
+        "avg_dps": 8717395
       },
       {
         "name": "Guillotine",
         "icon": "guillotine",
-        "min": 5006799,
-        "max": 5011054,
-        "avg_dps": 8348377
+        "min": 4943656,
+        "max": 4947911,
+        "avg_dps": 8243137
       },
       {
         "name": "Special Hit",
         "icon": "special_hit",
-        "min": 4977440,
-        "max": 4981482,
-        "avg_dps": 8299267
+        "min": 4914297,
+        "max": 4918339,
+        "avg_dps": 8194027
       },
       {
         "name": "Silent Strike",
         "icon": "silent_strike",
-        "min": 3837541,
-        "max": 3840519,
-        "avg_dps": 6398511
+        "min": 3774398,
+        "max": 3777376,
+        "avg_dps": 6293270
       },
       {
         "name": "Bloody Strike",
         "icon": "bloody_strike",
-        "min": 3500976,
-        "max": 3505231,
-        "avg_dps": 5838622
+        "min": 3437833,
+        "max": 3442088,
+        "avg_dps": 5733382
       },
       {
         "name": "Spring Attack",
         "icon": "spring_attack",
-        "min": 25583692,
-        "max": 25588798,
-        "avg_dps": 5562449
+        "min": 25520549,
+        "max": 25525655,
+        "avg_dps": 5548722
       },
       {
         "name": "Deadly X",
         "icon": "deadly_x",
-        "min": 67812490,
-        "max": 67830362,
-        "avg_dps": 5215467
+        "min": 67749347,
+        "max": 67767219,
+        "avg_dps": 5210611
       },
       {
         "name": "Jump Strike",
         "icon": "jump_strike",
-        "min": 17692267,
-        "max": 17694182,
-        "avg_dps": 4915177
+        "min": 17629124,
+        "max": 17631039,
+        "avg_dps": 4897636
       },
       {
         "name": "Hawk Attack",
         "icon": "hawk_attack",
-        "min": 46519704,
-        "max": 46533319,
-        "avg_dps": 4387450
+        "min": 46456561,
+        "max": 46470176,
+        "avg_dps": 4381495
       },
       {
         "name": "Armor Penetrate",
         "icon": "armor_penetrate",
-        "min": 39990496,
-        "max": 39993475,
-        "avg_dps": 3771244
+        "min": 39927353,
+        "max": 39930332,
+        "avg_dps": 3765289
       }
     ]
   },
@@ -1063,141 +1063,141 @@
     "typeBadge": "melee",
     "logo": "icons/classes/FF_Temp_Logo.png",
     "accent": "#80a8e0",
-    "pve_dps": 489255273,
-    "max_pve_dmg": 205803719,
+    "pve_dps": 161887463,
+    "max_pve_dmg": 61029420,
     "skills": [
       {
         "name": "PvE Melee",
         "icon": "melee",
-        "min": 123331648,
-        "max": 205803719,
-        "avg_dps": 489255273
+        "min": 47876693,
+        "max": 61029420,
+        "avg_dps": 161887463
       },
       {
         "name": "Hurricane Swing",
         "icon": "hurricane_swing",
-        "min": 43033608,
-        "max": 43098428,
-        "avg_dps": 103358443
+        "min": 42970465,
+        "max": 43035285,
+        "avg_dps": 103206900
       },
       {
         "name": "Blindside",
         "icon": "blindside",
-        "min": 38846550,
-        "max": 38906655,
-        "avg_dps": 64795633
+        "min": 38783407,
+        "max": 38843512,
+        "avg_dps": 64690392
       },
       {
         "name": "Dead Mans Lure",
         "icon": "dead_mans_lure",
-        "min": 61473231,
-        "max": 61578964,
-        "avg_dps": 55933375
+        "min": 61410088,
+        "max": 61515821,
+        "avg_dps": 55875971
       },
       {
         "name": "Power Swing",
         "icon": "power_swing",
-        "min": 44055918,
-        "max": 44099355,
-        "avg_dps": 44077636
+        "min": 43992775,
+        "max": 44036212,
+        "avg_dps": 44014493
       },
       {
         "name": "Earth Divider",
         "icon": "earth_divider",
-        "min": 20804098,
-        "max": 20839118,
-        "avg_dps": 34703374
+        "min": 20740955,
+        "max": 20775975,
+        "avg_dps": 34598133
       },
       {
         "name": "Charge",
         "icon": "charge",
-        "min": 20332004,
-        "max": 20383860,
-        "avg_dps": 33930565
+        "min": 20268861,
+        "max": 20320717,
+        "avg_dps": 33825324
       },
       {
         "name": "Keenwheel",
         "icon": "keenwheel",
-        "min": 13546070,
-        "max": 13606177,
-        "avg_dps": 22627325
+        "min": 13482927,
+        "max": 13543034,
+        "avg_dps": 22522084
       },
       {
         "name": "Slash",
         "icon": "slash",
-        "min": 12294616,
-        "max": 12354891,
-        "avg_dps": 20541666
+        "min": 12231473,
+        "max": 12291748,
+        "avg_dps": 20436426
       },
       {
         "name": "Hit Reflect",
         "icon": "hit_reflect",
-        "min": 3534945,
-        "max": 3595051,
-        "avg_dps": 5941782
+        "min": 3471802,
+        "max": 3531908,
+        "avg_dps": 5836541
       },
       {
         "name": "Guillotine",
         "icon": "guillotine",
-        "min": 3340989,
-        "max": 3401095,
-        "avg_dps": 5618515
+        "min": 3277846,
+        "max": 3337952,
+        "avg_dps": 5513275
       },
       {
         "name": "Special Hit",
         "icon": "special_hit",
-        "min": 3317755,
-        "max": 3377862,
-        "avg_dps": 5579792
+        "min": 3254612,
+        "max": 3314719,
+        "avg_dps": 5474551
       },
       {
         "name": "Bloody Strike",
         "icon": "bloody_strike",
-        "min": 2274231,
-        "max": 2334338,
-        "avg_dps": 3840550
+        "min": 2211088,
+        "max": 2271195,
+        "avg_dps": 3735310
       },
       {
         "name": "Phantom Echo",
         "icon": "phantom_echo",
-        "min": 20768236,
-        "max": 20832889,
-        "avg_dps": 3714980
+        "min": 20705093,
+        "max": 20769746,
+        "avg_dps": 3703703
       },
       {
         "name": "Sky Splitter",
         "icon": "sky_splitter",
-        "min": 32903617,
-        "max": 33188995,
-        "avg_dps": 3116266
+        "min": 32840474,
+        "max": 33125852,
+        "avg_dps": 3110312
       },
       {
         "name": "Maelstrom Strike",
         "icon": "maelstrom_strike",
-        "min": 25653165,
-        "max": 25733139,
-        "avg_dps": 2422864
+        "min": 25590022,
+        "max": 25669996,
+        "avg_dps": 2416909
       },
       {
         "name": "Pain Dealer",
         "icon": "pain_dealer",
-        "min": 23038296,
-        "max": 23081734,
-        "avg_dps": 2174559
+        "min": 22975153,
+        "max": 23018591,
+        "avg_dps": 2168605
       },
       {
         "name": "Power Stomp",
         "icon": "power_stomp",
-        "min": 32615546,
-        "max": 32658984,
-        "avg_dps": 1582907
+        "min": 32552403,
+        "max": 32595841,
+        "avg_dps": 1579844
       },
       {
         "name": "Shield Bash",
         "icon": "shield_bash",
-        "min": 15430743,
-        "max": 15550113,
-        "avg_dps": 992936
+        "min": 15367600,
+        "max": 15486970,
+        "avg_dps": 988888
       }
     ]
   }
