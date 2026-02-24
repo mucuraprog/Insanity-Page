@@ -150,6 +150,13 @@
         "avg_dps": 201172491
       },
       {
+        "name": "Lunar Cascade",
+        "icon": "lunar_cascade",
+        "min": 102651930,
+        "max": 517725875,
+        "avg_dps": 193868064
+      },
+      {
         "name": "Wind Cutter",
         "icon": "wind_cutter",
         "min": 38053024,
@@ -176,13 +183,6 @@
         "min": 24160986,
         "max": 122498752,
         "avg_dps": 122218892
-      },
-      {
-        "name": "Lunar Cascade",
-        "icon": "lunar_cascade",
-        "min": 58308433,
-        "max": 294229640,
-        "avg_dps": 110168147
       },
       {
         "name": "Flame Geyser",
@@ -220,6 +220,13 @@
         "avg_dps": 15028852
       },
       {
+        "name": "Spectral Javelin",
+        "icon": "spectral_javelin",
+        "min": 198490877,
+        "max": 1000760435,
+        "avg_dps": 9893823
+      },
+      {
         "name": "Lightning Storm",
         "icon": "lightning_storm",
         "min": 42223189,
@@ -232,13 +239,6 @@
         "min": 37205114,
         "max": 188149586,
         "avg_dps": 8045162
-      },
-      {
-        "name": "Spectral Javelin",
-        "icon": "spectral_javelin",
-        "min": 147926496,
-        "max": 745915956,
-        "avg_dps": 7374200
       },
       {
         "name": "Stellar Vortex",
@@ -267,6 +267,13 @@
         "avg_dps": 412793913
       },
       {
+        "name": "Ice Arrow",
+        "icon": "ice_arrow",
+        "min": 59696228,
+        "max": 59715981,
+        "avg_dps": 71647325
+      },
+      {
         "name": "Piercing Arrow",
         "icon": "piercing_arrow",
         "min": 39512985,
@@ -274,18 +281,18 @@
         "avg_dps": 65884275
       },
       {
+        "name": "Celestial Barrage",
+        "icon": "celestial_barrage",
+        "min": 42547779,
+        "max": 42610988,
+        "avg_dps": 63869075
+      },
+      {
         "name": "Flame Arrow",
         "icon": "flame_arrow",
         "min": 36043237,
         "max": 36068916,
         "avg_dps": 60094662
-      },
-      {
-        "name": "Ice Arrow",
-        "icon": "ice_arrow",
-        "min": 44091250,
-        "max": 44111004,
-        "avg_dps": 52921352
       },
       {
         "name": "Silent Shot",
@@ -300,13 +307,6 @@
         "min": 30218185,
         "max": 30247813,
         "avg_dps": 50389339
-      },
-      {
-        "name": "Celestial Barrage",
-        "icon": "celestial_barrage",
-        "min": 27431877,
-        "max": 27495086,
-        "avg_dps": 41195222
       },
       {
         "name": "Condor Dive",
@@ -433,6 +433,13 @@
         "avg_dps": 59531177
       },
       {
+        "name": "Bgvur Tialbold",
+        "icon": "bgvur_tialbold",
+        "min": 15070687,
+        "max": 15081295,
+        "avg_dps": 27136783
+      },
+      {
         "name": "Power Fist",
         "icon": "power_fist",
         "min": 7309112,
@@ -445,13 +452,6 @@
         "min": 6451212,
         "max": 6454945,
         "avg_dps": 10755345
-      },
-      {
-        "name": "Bgvur Tialbold",
-        "icon": "bgvur_tialbold",
-        "min": 5782494,
-        "max": 5793102,
-        "avg_dps": 10418036
       },
       {
         "name": "Sonichand",
@@ -524,9 +524,9 @@
       {
         "name": "Spiral Vortex",
         "icon": "spiral_vortex",
-        "min": 35454358,
-        "max": 35456140,
-        "avg_dps": 106365747
+        "min": 41093384,
+        "max": 41095166,
+        "avg_dps": 123282825
       },
       {
         "name": "Pandemonium",
@@ -643,9 +643,9 @@
       {
         "name": "Void Step",
         "icon": "void_step",
-        "min": 11018116,
-        "max": 11019898,
-        "avg_dps": 360321
+        "min": 21168601,
+        "max": 21170383,
+        "avg_dps": 692242
       },
       {
         "name": "Counterattack",
@@ -837,9 +837,9 @@
       {
         "name": "Cimetieres Scream",
         "icon": "cimetieres_scream",
-        "min": 135832404,
-        "max": 688542418,
-        "avg_dps": 6801092
+        "min": 184622512,
+        "max": 934444571,
+        "avg_dps": 9232303
       },
       {
         "name": "Psychic Wall",
@@ -868,6 +868,20 @@
         "avg_dps": 368141164
       },
       {
+        "name": "Merkaba Hanzelrusha",
+        "icon": "merkaba_hanzelrusha",
+        "min": 8171444,
+        "max": 35068324,
+        "avg_dps": 259438608
+      },
+      {
+        "name": "Soul of Rhisis",
+        "icon": "soul_of_rhisis",
+        "min": 9362120,
+        "max": 41191444,
+        "avg_dps": 75830346
+      },
+      {
         "name": "Priests Grasp",
         "icon": "priests_grasp",
         "min": 31478835,
@@ -894,20 +908,6 @@
         "min": 3542231,
         "max": 15140935,
         "avg_dps": 15569616
-      },
-      {
-        "name": "Soul of Rhisis",
-        "icon": "soul_of_rhisis",
-        "min": 9362120,
-        "max": 41191444,
-        "avg_dps": 5055356
-      },
-      {
-        "name": "Merkaba Hanzelrusha",
-        "icon": "merkaba_hanzelrusha",
-        "min": 6574360,
-        "max": 28360570,
-        "avg_dps": 1746746
       }
     ]
   },
@@ -931,9 +931,9 @@
       {
         "name": "Cross of Blood",
         "icon": "cross_of_blood",
-        "min": 79430607,
-        "max": 79460391,
-        "avg_dps": 127112798
+        "min": 101885419,
+        "max": 101915416,
+        "avg_dps": 163040668
       },
       {
         "name": "Blindside",
@@ -1074,6 +1074,13 @@
         "avg_dps": 489255273
       },
       {
+        "name": "Hurricane Swing",
+        "icon": "hurricane_swing",
+        "min": 43033608,
+        "max": 43098428,
+        "avg_dps": 103358443
+      },
+      {
         "name": "Blindside",
         "icon": "blindside",
         "min": 38846550,
@@ -1086,13 +1093,6 @@
         "min": 61473231,
         "max": 61578964,
         "avg_dps": 55933375
-      },
-      {
-        "name": "Hurricane Swing",
-        "icon": "hurricane_swing",
-        "min": 22792147,
-        "max": 22856967,
-        "avg_dps": 54778936
       },
       {
         "name": "Power Swing",

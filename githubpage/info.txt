@@ -22,30 +22,30 @@ Overview Build Results
   [Flame Ball]  42,204,581 – 213,833,987  DPS: 213,369,740
   [Windfield]  41,770,451 – 211,287,675  DPS: 210,885,989
   [EVA Storm]  39,906,581 – 201,495,581  DPS: 201,172,491
+  [Lunar Cascade]  102,651,930 – 517,725,875  DPS: 193,868,064
   [Wind Cutter]  38,053,024 – 192,729,237  DPS: 192,322,397
   [Swordwind]  32,808,801 – 166,298,334  DPS: 165,925,930
   [Strongwind]  32,808,801 – 166,298,334  DPS: 165,925,930
   [Burningfield]  24,160,986 – 122,498,752  DPS: 122,218,892
-  [Lunar Cascade]  58,308,433 – 294,229,640  DPS: 110,168,147
   [Flame Geyser]  20,210,868 – 103,563,087  DPS: 103,147,025
   [Mental Strike]  18,224,234 – 92,766,632  DPS: 92,494,238
   [Waterball]  8,371,311 – 43,102,891  DPS: 42,896,026
   [Blizzard]  31,760,162 – 160,634,359  DPS: 24,049,315
   [Meteor Shower]  69,604,822 – 351,371,451  DPS: 15,028,852
+  [Spectral Javelin]  198,490,877 – 1,000,760,435  DPS: 9,893,823
   [Lightning Storm]  42,223,189 – 213,368,016  DPS: 9,124,606
   [Sandstorm]  37,205,114 – 188,149,586  DPS: 8,045,162
-  [Spectral Javelin]  147,926,496 – 745,915,956  DPS: 7,374,200
   [Stellar Vortex]  47,550,546 – 240,009,887  DPS: 5,621,806
 
 === Crackshooter ===
   PvE DPS: 412,793,913  |  Max Hit: 238,716,471
   [PvE Melee]  143,117,899 – 238,716,471  DPS: 412,793,913
+  [Ice Arrow]  59,696,228 – 59,715,981  DPS: 71,647,325
   [Piercing Arrow]  39,512,985 – 39,546,564  DPS: 65,884,275
+  [Celestial Barrage]  42,547,779 – 42,610,988  DPS: 63,869,075
   [Flame Arrow]  36,043,237 – 36,068,916  DPS: 60,094,662
-  [Ice Arrow]  44,091,250 – 44,111,004  DPS: 52,921,352
   [Silent Shot]  31,164,730 – 31,170,261  DPS: 51,946,864
   [Poison Arrow]  30,218,185 – 30,247,813  DPS: 50,389,339
-  [Celestial Barrage]  27,431,877 – 27,495,086  DPS: 41,195,222
   [Condor Dive]  30,902,218 – 30,980,438  DPS: 30,941,328
   [Piercing Formation]  7,025,430 – 7,088,637  DPS: 21,171,100
   [Cross Line]  13,022,527 – 13,342,520  DPS: 15,819,028
@@ -65,9 +65,9 @@ Overview Build Results
   [PvE Melee]  140,078,992 – 233,543,249  DPS: 580,629,156
   [Crushing Cascade]  61,477,867 – 61,479,634  DPS: 86,070,250
   [Piercing Serpent]  47,618,655 – 47,631,229  DPS: 59,531,177
+  [Bgvur Tialbold]  15,070,687 – 15,081,295  DPS: 27,136,783
   [Power Fist]  7,309,112 – 7,312,845  DPS: 12,185,207
   [Burst Crack]  6,451,212 – 6,454,945  DPS: 10,755,345
-  [Bgvur Tialbold]  5,782,494 – 5,793,102  DPS: 10,418,036
   [Sonichand]  5,861,073 – 5,863,824  DPS: 9,770,942
   [Belial Smashing]  5,831,606 – 5,834,356  DPS: 9,721,829
   [Straight Punch]  5,674,249 – 5,678,178  DPS: 9,460,545
@@ -79,7 +79,7 @@ Overview Build Results
 === Harlequin ===
   PvE DPS: 523,302,809  |  Max Hit: 254,799,657
   [PvE Melee]  152,825,689 – 254,799,657  DPS: 523,302,809
-  [Spiral Vortex]  35,454,358 – 35,456,140  DPS: 106,365,747
+  [Spiral Vortex]  41,093,384 – 41,095,166  DPS: 123,282,825
   [Pandemonium]  38,261,101 – 38,447,214  DPS: 63,924,874
   [Cross Line]  50,565,943 – 50,885,107  DPS: 60,870,630
   [Vital stab]  33,480,373 – 33,497,004  DPS: 55,815,597
@@ -96,7 +96,7 @@ Overview Build Results
   [Snatch]  2,254,174 – 2,258,134  DPS: 3,760,331
   [Junk Arrow]  1,492,694 – 1,515,662  DPS: 2,507,013
   [Aimed Shot]  12,807,969 – 12,819,255  DPS: 1,490,223
-  [Void Step]  11,018,116 – 11,019,898  DPS: 360,321
+  [Void Step]  21,168,601 – 21,170,383  DPS: 692,242
   [Counterattack]  5,013,200 – 5,017,160  DPS: 196,093
 
 === Mentalist ===
@@ -124,23 +124,23 @@ Overview Build Results
   [Shazaam]  58,061,483 – 297,306,183  DPS: 31,734,332
   [Aether Grasp]  93,838,404 – 476,927,903  DPS: 26,911,631
   [Psychic Square]  58,721,671 – 296,328,813  DPS: 16,137,044
-  [Cimetieres Scream]  135,832,404 – 688,542,418  DPS: 6,801,092
+  [Cimetieres Scream]  184,622,512 – 934,444,571  DPS: 9,232,303
   [Psychic Wall]  19,619,798 – 99,699,620  DPS: 984,385
 
 === Seraph ===
   PvE DPS: 368,141,164  |  Max Hit: 148,082,484
   [PvE Melee]  88,808,352 – 148,082,484  DPS: 368,141,164
+  [Merkaba Hanzelrusha]  8,171,444 – 35,068,324  DPS: 259,438,608
+  [Soul of Rhisis]  9,362,120 – 41,191,444  DPS: 75,830,346
   [Priests Grasp]  31,478,835 – 133,201,207  DPS: 51,462,513
   [Power Fist]  4,259,158 – 18,152,026  DPS: 18,676,360
   [Burst Crack]  3,851,084 – 16,439,111  DPS: 16,908,834
   [Straight Punch]  3,542,231 – 15,140,935  DPS: 15,569,616
-  [Soul of Rhisis]  9,362,120 – 41,191,444  DPS: 5,055,356
-  [Merkaba Hanzelrusha]  6,574,360 – 28,360,570  DPS: 1,746,746
 
 === Slayer ===
   PvE DPS: 723,781,652  |  Max Hit: 267,830,149
   [PvE Melee]  160,648,589 – 267,830,149  DPS: 723,781,652
-  [Cross of Blood]  79,430,607 – 79,460,391  DPS: 127,112,798
+  [Cross of Blood]  101,885,419 – 101,915,416  DPS: 163,040,668
   [Blindside]  55,437,847 – 55,441,888  DPS: 92,401,627
   [Cross Strike]  42,096,267 – 42,139,668  DPS: 38,289,444
   [Keenwheel]  19,520,402 – 19,524,657  DPS: 32,538,199
@@ -162,9 +162,9 @@ Overview Build Results
 === Templar ===
   PvE DPS: 489,255,273  |  Max Hit: 205,803,719
   [PvE Melee]  123,331,648 – 205,803,719  DPS: 489,255,273
+  [Hurricane Swing]  43,033,608 – 43,098,428  DPS: 103,358,443
   [Blindside]  38,846,550 – 38,906,655  DPS: 64,795,633
   [Dead Mans Lure]  61,473,231 – 61,578,964  DPS: 55,933,375
-  [Hurricane Swing]  22,792,147 – 22,856,967  DPS: 54,778,936
   [Power Swing]  44,055,918 – 44,099,355  DPS: 44,077,636
   [Earth Divider]  20,804,098 – 20,839,118  DPS: 34,703,374
   [Charge]  20,332,004 – 20,383,860  DPS: 33,930,565
