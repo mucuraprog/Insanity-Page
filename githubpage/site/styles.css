@@ -654,7 +654,6 @@ tbody tr .dps-mini-bar-fill {
   width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: var(--radius);
-  overflow: hidden;
   background: #0a0d1a;
   margin-bottom: 4px;
   position: relative;
