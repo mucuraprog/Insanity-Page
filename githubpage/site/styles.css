@@ -632,6 +632,193 @@ tbody tr .dps-mini-bar-fill {
 /* ─── MEDALS TOP 3 ───────────────────────────────────────────────── */
 .medal { font-size: 16px; line-height: 1; }
 
+/* ─── INFO RAIL (right panel) ────────────────────────────────────── */
+.info-rail {
+  width: 230px;
+  min-width: 230px;
+  position: sticky;
+  top: 64px;
+  height: calc(100vh - 64px);
+  overflow-y: auto;
+  padding: 20px 14px;
+  border-left: 1px solid var(--border);
+  background: #070c1f;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  scrollbar-width: thin;
+}
+
+/* Oroth image */
+.oroth-img-wrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #0a0d1a;
+  margin-bottom: 4px;
+  position: relative;
+  border: 1px solid var(--border);
+}
+
+.oroth-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+  border-radius: var(--radius);
+  mix-blend-mode: screen;
+}
+
+/* Vignette to blend the remaining white edges into the dark border */
+.oroth-img-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to bottom, #0a0d1a 0%, transparent 25%, transparent 75%, #0a0d1a 100%),
+    linear-gradient(to right,  #0a0d1a 0%, transparent 20%, transparent 80%, #0a0d1a 100%);
+  pointer-events: none;
+  border-radius: var(--radius);
+}
+
+.oroth-title {
+  font-family: 'Cinzel', Georgia, serif;
+  font-size: 16px;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--gold-light) 30%, var(--gold) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.oroth-subtitle {
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.oroth-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border), transparent);
+  margin: 6px 0;
+}
+
+.oroth-section-label {
+  font-family: 'Cinzel', serif;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: var(--gold-dim);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  margin-top: 2px;
+}
+
+.oroth-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.oroth-stat-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  background: #0b1230;
+  border: 1px solid #1a2550;
+}
+
+.oroth-stat-label {
+  font-size: 11px;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
+.oroth-stat-value {
+  font-size: 11px;
+  font-weight: 700;
+  font-family: 'Exo 2', sans-serif;
+  color: var(--text-bright);
+  white-space: nowrap;
+}
+
+.oroth-stat-value.oroth-fire    { color: #f07a40; }
+.oroth-stat-value.oroth-weak    { color: #60e090; }
+.oroth-stat-value.oroth-resist  { color: #e05050; }
+.oroth-stat-value.oroth-neutral { color: var(--text-dim); }
+.oroth-stat-value.oroth-danger  { color: #e06060; }
+
+/* Build condition blocks */
+.oroth-condition-block {
+  background: linear-gradient(135deg, var(--bg3), var(--panel));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  margin-bottom: 4px;
+}
+
+.oroth-condition-tag {
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 7px;
+}
+
+.adoch-tag {
+  background: #1a0a0a;
+  border: 1px solid #501010;
+  color: #f07060;
+}
+
+.mage-tag {
+  background: #0a1530;
+  border: 1px solid #1a3a80;
+  color: #60a0f0;
+}
+
+.oroth-condition-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.oroth-condition-list li {
+  font-size: 11px;
+  color: var(--text);
+  padding-left: 12px;
+  position: relative;
+}
+
+.oroth-condition-list li::before {
+  content: '·';
+  position: absolute;
+  left: 2px;
+  color: var(--gold-dim);
+}
+
+/* Hide info-rail on narrow screens */
+@media (max-width: 1200px) {
+  .info-rail { display: none; }
+}
+
 /* ─── FOOTER ─────────────────────────────────────────────────────── */
 .site-footer {
   border-top: 1px solid var(--border);

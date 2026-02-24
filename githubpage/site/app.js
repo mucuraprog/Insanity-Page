@@ -280,7 +280,12 @@ let sortAsc = false;
 let maxDPS = 0;
 
 function _computeMaxDPS() {
-  maxDPS = Math.max(0, ...CLASSES.filter(c => c.pve_dps).map(c => c.pve_dps));
+  maxDPS = Math.max(0, ...CLASSES.map(c => c.pve_dps || _topSkillDPS(c)));
+}
+
+function _topSkillDPS(cls) {
+  if (!cls.skills || !cls.skills.length) return 0;
+  return Math.max(...cls.skills.map(s => s.avg_dps || 0));
 }
 
 function buildOverviewGrid() {
@@ -290,13 +295,14 @@ function buildOverviewGrid() {
     const card = document.createElement('div');
     card.className = 'class-overview-card' + (cls.id === currentClass ? ' selected' : '');
     card.style.setProperty('--card-accent', cls.accent);
-    const dpsBar = cls.pve_dps
-      ? `<div class="dps-bar-bg"><div class="dps-bar-fill" style="width:${Math.round(cls.pve_dps / maxDPS * 100)}%"></div></div>`
-      : '';
+    const displayDPS = cls.pve_dps || _topSkillDPS(cls);
+    const dpsBar = `<div class="dps-bar-bg"><div class="dps-bar-fill" style="width:${Math.round(displayDPS / maxDPS * 100)}%"></div></div>`;
+    const dpsLabel = cls.pve_dps ? 'PVE DPS' : 'TOP SKILL DPS';
     const dpsVal = cls.pve_dps
       ? `<div class="card-dps-value">${fmtShort(cls.pve_dps)}</div>
          <div class="card-dps-sub">Max Hit: ${fmtShort(cls.max_pve_dmg)}</div>`
-      : `<div class="card-dps-value" style="color:var(--text-dim);font-size:12px">Skill build only</div>`;
+      : `<div class="card-dps-value">${fmtShort(displayDPS)}</div>
+         <div class="card-dps-sub">Best single skill</div>`;
     card.innerHTML = `
       <div class="card-header">
         <img class="card-class-logo" src="${cls.logo}" alt="${cls.name}" onerror="this.style.display='none'">
@@ -305,7 +311,7 @@ function buildOverviewGrid() {
           <span class="type-badge ${cls.typeBadge}">${cls.type}</span>
         </div>
       </div>
-      <div class="card-dps-label">PVE DPS</div>
+      <div class="card-dps-label">${dpsLabel}</div>
       ${dpsVal}
       ${dpsBar}
     `;
@@ -324,7 +330,7 @@ function buildSidebar() {
     item.innerHTML = `
       <img class="nav-logo" src="${cls.logo}" alt="${cls.name}" onerror="this.style.display='none'">
       <span>${cls.name}</span>
-      ${cls.pve_dps ? `<span class="nav-dps">${fmtShort(cls.pve_dps)}</span>` : ''}
+      ${cls.pve_dps ? `<span class="nav-dps">${fmtShort(cls.pve_dps)}</span>` : `<span class="nav-dps">${fmtShort(_topSkillDPS(cls))}</span>`}
     `;
     item.addEventListener('click', (e) => { e.preventDefault(); switchClass(cls.id); });
     nav.appendChild(item);
