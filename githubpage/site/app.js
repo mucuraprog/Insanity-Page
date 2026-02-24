@@ -529,7 +529,7 @@ function initParticles() {
 // ─── BOOT ─────────────────────────────────────────────────────────────────────
 async function boot() {
   try {
-    const res = await fetch('data.json');
+    const res = await fetch('data.json?v=' + Date.now());
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     CLASSES = await res.json();
   } catch (e) {
