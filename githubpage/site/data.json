@@ -267,11 +267,25 @@
         "avg_dps": 154009114
       },
       {
+        "name": "Ice Arrow",
+        "icon": "ice_arrow",
+        "min": 59633085,
+        "max": 59652838,
+        "avg_dps": 47714369
+      },
+      {
         "name": "Celestial Barrage",
         "icon": "celestial_barrage",
         "min": 42484636,
         "max": 42547845,
         "avg_dps": 28344160
+      },
+      {
+        "name": "Piercing Arrow",
+        "icon": "piercing_arrow",
+        "min": 39449842,
+        "max": 39483421,
+        "avg_dps": 21985544
       },
       {
         "name": "Condor Dive",
@@ -281,6 +295,13 @@
         "avg_dps": 20585456
       },
       {
+        "name": "Flame Arrow",
+        "icon": "flame_arrow",
+        "min": 35980094,
+        "max": 36005773,
+        "avg_dps": 20050463
+      },
+      {
         "name": "Silent Shot",
         "icon": "silent_shot",
         "min": 31101587,
@@ -288,11 +309,18 @@
         "avg_dps": 17327197
       },
       {
-        "name": "Ice Arrow",
-        "icon": "ice_arrow",
-        "min": 59633085,
-        "max": 59652838,
-        "avg_dps": 13252666
+        "name": "Arrow Rain",
+        "icon": "arrow_rain",
+        "min": 30301408,
+        "max": 30336963,
+        "avg_dps": 16889807
+      },
+      {
+        "name": "Poison Arrow",
+        "icon": "poison_arrow",
+        "min": 30155042,
+        "max": 30184670,
+        "avg_dps": 16806621
       },
       {
         "name": "Cross Line",
@@ -302,25 +330,11 @@
         "avg_dps": 11317652
       },
       {
-        "name": "Piercing Arrow",
-        "icon": "piercing_arrow",
-        "min": 39449842,
-        "max": 39483421,
-        "avg_dps": 8769485
-      },
-      {
-        "name": "Piercing Formation",
-        "icon": "piercing_formation",
-        "min": 6962287,
-        "max": 7025494,
-        "avg_dps": 4662593
-      },
-      {
-        "name": "Flame Arrow",
-        "icon": "flame_arrow",
-        "min": 35980094,
-        "max": 36005773,
-        "avg_dps": 4000014
+        "name": "Deadly swing",
+        "icon": "deadly_swing",
+        "min": 3838802,
+        "max": 3844333,
+        "avg_dps": 4122514
       },
       {
         "name": "Aimed Shot",
@@ -330,18 +344,18 @@
         "avg_dps": 3792874
       },
       {
-        "name": "Triple shot",
-        "icon": "triple_shot",
-        "min": 33070531,
-        "max": 33096208,
-        "avg_dps": 2756947
+        "name": "Snatch",
+        "icon": "snatch",
+        "min": 4019933,
+        "max": 4025266,
+        "avg_dps": 3687382
       },
       {
-        "name": "Arrow Rain",
-        "icon": "arrow_rain",
-        "min": 30301408,
-        "max": 30336963,
-        "avg_dps": 2526598
+        "name": "Auto Shot",
+        "icon": "auto_shot",
+        "min": 7839501,
+        "max": 7845032,
+        "avg_dps": 3671226
       },
       {
         "name": "Junk Arrow",
@@ -351,53 +365,39 @@
         "avg_dps": 2285546
       },
       {
-        "name": "Poison Arrow",
-        "icon": "poison_arrow",
-        "min": 30155042,
-        "max": 30184670,
-        "avg_dps": 1005661
-      },
-      {
-        "name": "Deadly swing",
-        "icon": "deadly_swing",
-        "min": 3838802,
-        "max": 3844333,
-        "avg_dps": 853596
-      },
-      {
-        "name": "Auto Shot",
-        "icon": "auto_shot",
-        "min": 7839501,
-        "max": 7845032,
-        "avg_dps": 522817
-      },
-      {
-        "name": "Silent Arrow",
-        "icon": "silent_arrow",
-        "min": 10581364,
-        "max": 10605068,
-        "avg_dps": 353107
-      },
-      {
-        "name": "Snatch",
-        "icon": "snatch",
-        "min": 4019933,
-        "max": 4025266,
-        "avg_dps": 268173
+        "name": "Triple shot",
+        "icon": "triple_shot",
+        "min": 33070531,
+        "max": 33096208,
+        "avg_dps": 2205557
       },
       {
         "name": "Slow Step",
         "icon": "slow_step",
         "min": 1848328,
         "max": 1853859,
-        "avg_dps": 123406
+        "avg_dps": 1696835
+      },
+      {
+        "name": "Piercing Formation",
+        "icon": "piercing_formation",
+        "min": 6962287,
+        "max": 7025494,
+        "avg_dps": 932518
+      },
+      {
+        "name": "Silent Arrow",
+        "icon": "silent_arrow",
+        "min": 10581364,
+        "max": 10605068,
+        "avg_dps": 471045
       },
       {
         "name": "Counterattack",
         "icon": "counterattack",
         "min": 2066595,
         "max": 2071929,
-        "avg_dps": 68975
+        "avg_dps": 55180
       }
     ]
   },
@@ -419,6 +419,20 @@
         "avg_dps": 212683474
       },
       {
+        "name": "Sonichand",
+        "icon": "sonichand",
+        "min": 5797930,
+        "max": 5800681,
+        "avg_dps": 44377832
+      },
+      {
+        "name": "Crushing Cascade",
+        "icon": "crushing_cascade",
+        "min": 61414724,
+        "max": 61416491,
+        "avg_dps": 40943738
+      },
+      {
         "name": "Piercing Serpent",
         "icon": "piercing_serpent",
         "min": 47555512,
@@ -431,13 +445,6 @@
         "min": 15007544,
         "max": 15018152,
         "avg_dps": 18872150
-      },
-      {
-        "name": "Crushing Cascade",
-        "icon": "crushing_cascade",
-        "min": 61414724,
-        "max": 61416491,
-        "avg_dps": 18015244
       },
       {
         "name": "Baraqijal Esna",
@@ -486,14 +493,7 @@
         "icon": "blood_fist",
         "min": 5128819,
         "max": 5131569,
-        "avg_dps": 1710064
-      },
-      {
-        "name": "Sonichand",
-        "icon": "sonichand",
-        "min": 5797930,
-        "max": 5800681,
-        "avg_dps": 1237185
+        "avg_dps": 228122
       },
       {
         "name": "Asalraalaikum",
@@ -522,6 +522,13 @@
         "avg_dps": 195079315
       },
       {
+        "name": "Spiral Vortex",
+        "icon": "spiral_vortex",
+        "min": 41030241,
+        "max": 41032023,
+        "avg_dps": 164124528
+      },
+      {
         "name": "Cross Line",
         "icon": "cross_line",
         "min": 50502800,
@@ -529,18 +536,32 @@
         "avg_dps": 43704748
       },
       {
-        "name": "Spiral Vortex",
-        "icon": "spiral_vortex",
-        "min": 41030241,
-        "max": 41032023,
-        "avg_dps": 27351352
+        "name": "Pandemonium",
+        "icon": "pandemonium",
+        "min": 38197958,
+        "max": 38384071,
+        "avg_dps": 42546422
       },
       {
-        "name": "Hit of Penya",
-        "icon": "hit_of_penya",
-        "min": 76132936,
-        "max": 76175703,
-        "avg_dps": 6346193
+        "name": "Vital stab",
+        "icon": "vital_stab",
+        "min": 33417230,
+        "max": 33433861,
+        "avg_dps": 35870067
+      },
+      {
+        "name": "Deadly swing",
+        "icon": "deadly_swing",
+        "min": 12911140,
+        "max": 12915100,
+        "avg_dps": 13857499
+      },
+      {
+        "name": "Sneak Stab",
+        "icon": "sneak_stab",
+        "min": 6466879,
+        "max": 6477569,
+        "avg_dps": 5583371
       },
       {
         "name": "Enchant of Nature",
@@ -550,18 +571,11 @@
         "avg_dps": 5350227
       },
       {
-        "name": "Void Step",
-        "icon": "void_step",
-        "min": 21105458,
-        "max": 21107240,
-        "avg_dps": 4689830
-      },
-      {
-        "name": "Vital stab",
-        "icon": "vital_stab",
-        "min": 33417230,
-        "max": 33433861,
-        "avg_dps": 4456739
+        "name": "Hit of Penya",
+        "icon": "hit_of_penya",
+        "min": 76132936,
+        "max": 76175703,
+        "avg_dps": 4614951
       },
       {
         "name": "Enchant of Iron",
@@ -578,25 +592,32 @@
         "avg_dps": 4306550
       },
       {
-        "name": "Deadly swing",
-        "icon": "deadly_swing",
-        "min": 12911140,
-        "max": 12915100,
-        "avg_dps": 2869295
+        "name": "Arrow Rain",
+        "icon": "arrow_rain",
+        "min": 7551086,
+        "max": 7585141,
+        "avg_dps": 4215943
       },
       {
-        "name": "Pandemonium",
-        "icon": "pandemonium",
-        "min": 38197958,
-        "max": 38384071,
-        "avg_dps": 2552734
+        "name": "Slow Step",
+        "icon": "slow_step",
+        "min": 4112944,
+        "max": 4116706,
+        "avg_dps": 3771922
       },
       {
         "name": "Harlequins Greeting",
         "icon": "harlequins_greeting",
         "min": 25752146,
         "max": 25938259,
-        "avg_dps": 1723013
+        "avg_dps": 3446027
+      },
+      {
+        "name": "Snatch",
+        "icon": "snatch",
+        "min": 2191031,
+        "max": 2194991,
+        "avg_dps": 2010260
       },
       {
         "name": "Junk Arrow",
@@ -606,6 +627,13 @@
         "avg_dps": 1243132
       },
       {
+        "name": "Auto Shot",
+        "icon": "auto_shot",
+        "min": 2522272,
+        "max": 2526034,
+        "avg_dps": 1181640
+      },
+      {
         "name": "Aimed Shot",
         "icon": "aimed_shot",
         "min": 12744826,
@@ -613,46 +641,18 @@
         "avg_dps": 1062539
       },
       {
-        "name": "Arrow Rain",
-        "icon": "arrow_rain",
-        "min": 7551086,
-        "max": 7585141,
-        "avg_dps": 630676
-      },
-      {
-        "name": "Slow Step",
-        "icon": "slow_step",
-        "min": 4112944,
-        "max": 4116706,
-        "avg_dps": 274321
-      },
-      {
-        "name": "Sneak Stab",
-        "icon": "sneak_stab",
-        "min": 6466879,
-        "max": 6477569,
-        "avg_dps": 215740
-      },
-      {
-        "name": "Auto Shot",
-        "icon": "auto_shot",
-        "min": 2522272,
-        "max": 2526034,
-        "avg_dps": 168276
+        "name": "Void Step",
+        "icon": "void_step",
+        "min": 21105458,
+        "max": 21107240,
+        "avg_dps": 468560
       },
       {
         "name": "Counterattack",
         "icon": "counterattack",
         "min": 4950057,
         "max": 4954017,
-        "avg_dps": 165067
-      },
-      {
-        "name": "Snatch",
-        "icon": "snatch",
-        "min": 2191031,
-        "max": 2194991,
-        "avg_dps": 146200
+        "avg_dps": 132054
       }
     ]
   },
@@ -929,11 +929,39 @@
         "avg_dps": 321356590
       },
       {
+        "name": "Cross of Blood",
+        "icon": "cross_of_blood",
+        "min": 101822276,
+        "max": 101852273,
+        "avg_dps": 109284973
+      },
+      {
         "name": "Blindside",
         "icon": "blindside",
         "min": 55374704,
         "max": 55378745,
         "avg_dps": 47771654
+      },
+      {
+        "name": "Cross Strike",
+        "icon": "cross_strike",
+        "min": 42033124,
+        "max": 42076525,
+        "avg_dps": 36279295
+      },
+      {
+        "name": "Blade Dance",
+        "icon": "blade_dance",
+        "min": 43415554,
+        "max": 43418533,
+        "avg_dps": 28944695
+      },
+      {
+        "name": "Shadow Ricochet",
+        "icon": "shadow_ricochet",
+        "min": 20303141,
+        "max": 20305055,
+        "avg_dps": 27072130
       },
       {
         "name": "Sonic Blade",
@@ -950,46 +978,11 @@
         "avg_dps": 12971627
       },
       {
-        "name": "Blade Dance",
-        "icon": "blade_dance",
-        "min": 43415554,
-        "max": 43418533,
-        "avg_dps": 12735666
-      },
-      {
-        "name": "Cross Strike",
-        "icon": "cross_strike",
-        "min": 42033124,
-        "max": 42076525,
-        "avg_dps": 12336081
-      },
-      {
         "name": "Slash",
         "icon": "slash",
         "min": 17678693,
         "max": 17682949,
         "avg_dps": 9849396
-      },
-      {
-        "name": "Cross of Blood",
-        "icon": "cross_of_blood",
-        "min": 101822276,
-        "max": 101852273,
-        "avg_dps": 6789151
-      },
-      {
-        "name": "Shadow Ricochet",
-        "icon": "shadow_ricochet",
-        "min": 20303141,
-        "max": 20305055,
-        "avg_dps": 5955868
-      },
-      {
-        "name": "Deadly X",
-        "icon": "deadly_x",
-        "min": 67749347,
-        "max": 67767219,
-        "avg_dps": 4517218
       },
       {
         "name": "Spring Attack",
@@ -1006,6 +999,41 @@
         "avg_dps": 4199218
       },
       {
+        "name": "Deadly X",
+        "icon": "deadly_x",
+        "min": 67749347,
+        "max": 67767219,
+        "avg_dps": 3762843
+      },
+      {
+        "name": "Hit Reflect",
+        "icon": "hit_reflect",
+        "min": 5228312,
+        "max": 5232353,
+        "avg_dps": 3652864
+      },
+      {
+        "name": "Silent Strike",
+        "icon": "silent_strike",
+        "min": 3774398,
+        "max": 3777376,
+        "avg_dps": 3611761
+      },
+      {
+        "name": "Guillotine",
+        "icon": "guillotine",
+        "min": 4943656,
+        "max": 4947911,
+        "avg_dps": 3454135
+      },
+      {
+        "name": "Special Hit",
+        "icon": "special_hit",
+        "min": 4914297,
+        "max": 4918339,
+        "avg_dps": 3433556
+      },
+      {
         "name": "Hawk Attack",
         "icon": "hawk_attack",
         "min": 46456561,
@@ -1020,39 +1048,11 @@
         "avg_dps": 2661922
       },
       {
-        "name": "Hit Reflect",
-        "icon": "hit_reflect",
-        "min": 5228312,
-        "max": 5232353,
-        "avg_dps": 1534230
-      },
-      {
-        "name": "Guillotine",
-        "icon": "guillotine",
-        "min": 4943656,
-        "max": 4947911,
-        "avg_dps": 1450763
-      },
-      {
-        "name": "Special Hit",
-        "icon": "special_hit",
-        "min": 4914297,
-        "max": 4918339,
-        "avg_dps": 1442119
-      },
-      {
-        "name": "Silent Strike",
-        "icon": "silent_strike",
-        "min": 3774398,
-        "max": 3777376,
-        "avg_dps": 1107593
-      },
-      {
         "name": "Bloody Strike",
         "icon": "bloody_strike",
         "min": 3437833,
         "max": 3442088,
-        "avg_dps": 1009055
+        "avg_dps": 2225883
       }
     ]
   },
@@ -1074,6 +1074,20 @@
         "avg_dps": 178857007
       },
       {
+        "name": "Dead Mans Lure",
+        "icon": "dead_mans_lure",
+        "min": 61410088,
+        "max": 61515821,
+        "avg_dps": 58791364
+      },
+      {
+        "name": "Power Swing",
+        "icon": "power_swing",
+        "min": 43992775,
+        "max": 44036212,
+        "avg_dps": 37969836
+      },
+      {
         "name": "Blindside",
         "icon": "blindside",
         "min": 38783407,
@@ -1088,11 +1102,18 @@
         "avg_dps": 28668583
       },
       {
-        "name": "Power Swing",
-        "icon": "power_swing",
-        "min": 43992775,
-        "max": 44036212,
-        "avg_dps": 9780020
+        "name": "Charge",
+        "icon": "charge",
+        "min": 20268861,
+        "max": 20320717,
+        "avg_dps": 15944939
+      },
+      {
+        "name": "Earth Divider",
+        "icon": "earth_divider",
+        "min": 20740955,
+        "max": 20775975,
+        "avg_dps": 11563848
       },
       {
         "name": "Keenwheel",
@@ -1109,32 +1130,32 @@
         "avg_dps": 6830534
       },
       {
-        "name": "Charge",
-        "icon": "charge",
-        "min": 20268861,
-        "max": 20320717,
-        "avg_dps": 5953138
-      },
-      {
-        "name": "Earth Divider",
-        "icon": "earth_divider",
-        "min": 20740955,
-        "max": 20775975,
-        "avg_dps": 5074752
-      },
-      {
-        "name": "Pain Dealer",
-        "icon": "pain_dealer",
-        "min": 22975153,
-        "max": 23018591,
-        "avg_dps": 3066249
-      },
-      {
         "name": "Phantom Echo",
         "icon": "phantom_echo",
         "min": 20705093,
         "max": 20769746,
         "avg_dps": 2764989
+      },
+      {
+        "name": "Hit Reflect",
+        "icon": "hit_reflect",
+        "min": 3471802,
+        "max": 3531908,
+        "avg_dps": 2445695
+      },
+      {
+        "name": "Guillotine",
+        "icon": "guillotine",
+        "min": 3277846,
+        "max": 3337952,
+        "avg_dps": 2310236
+      },
+      {
+        "name": "Special Hit",
+        "icon": "special_hit",
+        "min": 3254612,
+        "max": 3314719,
+        "avg_dps": 2294010
       },
       {
         "name": "Sky Splitter",
@@ -1151,6 +1172,20 @@
         "avg_dps": 1708667
       },
       {
+        "name": "Pain Dealer",
+        "icon": "pain_dealer",
+        "min": 22975153,
+        "max": 23018591,
+        "avg_dps": 1533124
+      },
+      {
+        "name": "Bloody Strike",
+        "icon": "bloody_strike",
+        "min": 2211088,
+        "max": 2271195,
+        "avg_dps": 1450167
+      },
+      {
         "name": "Power Stomp",
         "icon": "power_stomp",
         "min": 32552403,
@@ -1158,46 +1193,11 @@
         "avg_dps": 1085804
       },
       {
-        "name": "Hit Reflect",
-        "icon": "hit_reflect",
-        "min": 3471802,
-        "max": 3531908,
-        "avg_dps": 1027210
-      },
-      {
-        "name": "Guillotine",
-        "icon": "guillotine",
-        "min": 3277846,
-        "max": 3337952,
-        "avg_dps": 970317
-      },
-      {
-        "name": "Special Hit",
-        "icon": "special_hit",
-        "min": 3254612,
-        "max": 3314719,
-        "avg_dps": 963501
-      },
-      {
-        "name": "Dead Mans Lure",
-        "icon": "dead_mans_lure",
-        "min": 61410088,
-        "max": 61515821,
-        "avg_dps": 819506
-      },
-      {
         "name": "Shield Bash",
         "icon": "shield_bash",
         "min": 15367600,
         "max": 15486970,
         "avg_dps": 685999
-      },
-      {
-        "name": "Bloody Strike",
-        "icon": "bloody_strike",
-        "min": 2211088,
-        "max": 2271195,
-        "avg_dps": 657401
       }
     ]
   }
