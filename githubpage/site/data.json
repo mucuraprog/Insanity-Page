@@ -419,13 +419,6 @@
         "avg_dps": 212683474
       },
       {
-        "name": "Sonichand",
-        "icon": "sonichand",
-        "min": 5797930,
-        "max": 5800681,
-        "avg_dps": 66566748
-      },
-      {
         "name": "Crushing Cascade",
         "icon": "crushing_cascade",
         "min": 61414724,
@@ -452,6 +445,13 @@
         "min": 6214013,
         "max": 6214799,
         "avg_dps": 11717883
+      },
+      {
+        "name": "Sonichand",
+        "icon": "sonichand",
+        "min": 5797930,
+        "max": 5800681,
+        "avg_dps": 9278888
       },
       {
         "name": "Skybreaker",
@@ -515,18 +515,18 @@
     "max_pve_dmg": 90714857,
     "skills": [
       {
-        "name": "Spiral Vortex",
-        "icon": "spiral_vortex",
-        "min": 41030241,
-        "max": 41032023,
-        "avg_dps": 246186792
-      },
-      {
         "name": "PvE Melee",
         "icon": "melee",
         "min": 59346599,
         "max": 90714857,
         "avg_dps": 195079315
+      },
+      {
+        "name": "Spiral Vortex",
+        "icon": "spiral_vortex",
+        "min": 41030241,
+        "max": 41032023,
+        "avg_dps": 123093396
       },
       {
         "name": "Cross Line",
@@ -1074,6 +1074,13 @@
         "avg_dps": 178857007
       },
       {
+        "name": "Hurricane Swing",
+        "icon": "hurricane_swing",
+        "min": 42970465,
+        "max": 43035285,
+        "avg_dps": 103206900
+      },
+      {
         "name": "Dead Mans Lure",
         "icon": "dead_mans_lure",
         "min": 61410088,
@@ -1093,13 +1100,6 @@
         "min": 38783407,
         "max": 38843512,
         "avg_dps": 50224616
-      },
-      {
-        "name": "Hurricane Swing",
-        "icon": "hurricane_swing",
-        "min": 42970465,
-        "max": 43035285,
-        "avg_dps": 43002875
       },
       {
         "name": "Charge",
