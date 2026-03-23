@@ -10,25 +10,11 @@
     "max_pve_dmg": null,
     "skills": [
       {
-        "name": "Iceshark",
-        "icon": "iceshark",
-        "min": 107048330,
-        "max": 386237844,
-        "avg_dps": 293307959
-      },
-      {
-        "name": "Water Well",
-        "icon": "water_well",
-        "min": 77634573,
-        "max": 281262452,
-        "avg_dps": 239264683
-      },
-      {
         "name": "Firebird",
         "icon": "firebird",
-        "min": 67344750,
-        "max": 242759417,
-        "avg_dps": 206736111
+        "min": 74835993,
+        "max": 269741184,
+        "avg_dps": 229718118
       },
       {
         "name": "Lightning Strike",
@@ -38,11 +24,18 @@
         "avg_dps": 205083133
       },
       {
-        "name": "Ice Missile",
-        "icon": "ice_missile",
-        "min": 66372555,
-        "max": 240060615,
-        "avg_dps": 204288780
+        "name": "Iceshark",
+        "icon": "iceshark",
+        "min": 74835993,
+        "max": 270073415,
+        "avg_dps": 205083133
+      },
+      {
+        "name": "Void",
+        "icon": "void",
+        "min": 74835993,
+        "max": 269741184,
+        "avg_dps": 204885589
       },
       {
         "name": "Earthquake",
@@ -59,11 +52,46 @@
         "avg_dps": 182607466
       },
       {
+        "name": "Lunar Cascade",
+        "icon": "lunar_cascade",
+        "min": 112924766,
+        "max": 406768239,
+        "avg_dps": 173231001
+      },
+      {
+        "name": "Waterball",
+        "icon": "waterball",
+        "min": 9216086,
+        "max": 33850178,
+        "avg_dps": 172265056
+      },
+      {
+        "name": "Wind Cutter",
+        "icon": "wind_cutter",
+        "min": 54394221,
+        "max": 196664045,
+        "avg_dps": 167372177
+      },
+      {
         "name": "Lightning Shock",
         "icon": "lightning_shock",
         "min": 54394221,
         "max": 196664045,
         "avg_dps": 167372177
+      },
+      {
+        "name": "Fire Strike",
+        "icon": "fire_strike",
+        "min": 54266929,
+        "max": 196664045,
+        "avg_dps": 167287316
+      },
+      {
+        "name": "Water Well",
+        "icon": "water_well",
+        "min": 54266929,
+        "max": 196664045,
+        "avg_dps": 167287316
       },
       {
         "name": "Lighting Ram",
@@ -80,6 +108,13 @@
         "avg_dps": 167287316
       },
       {
+        "name": "Windfield",
+        "icon": "windfield",
+        "min": 59704832,
+        "max": 215601232,
+        "avg_dps": 163696985
+      },
+      {
         "name": "Electric Shock",
         "icon": "electric_shock",
         "min": 59704832,
@@ -87,25 +122,25 @@
         "avg_dps": 163617969
       },
       {
-        "name": "Lunar Cascade",
-        "icon": "lunar_cascade",
-        "min": 102651930,
-        "max": 369782359,
-        "avg_dps": 157478096
+        "name": "Flame Ball",
+        "icon": "flame_ball",
+        "min": 46902470,
+        "max": 169693737,
+        "avg_dps": 144397471
       },
       {
-        "name": "Waterball",
-        "icon": "waterball",
-        "min": 8371311,
-        "max": 30765943,
-        "avg_dps": 156549016
+        "name": "Swordwind",
+        "icon": "swordwind",
+        "min": 46902470,
+        "max": 169693737,
+        "avg_dps": 144397471
       },
       {
-        "name": "Fire Strike",
-        "icon": "fire_strike",
-        "min": 48832595,
-        "max": 176990001,
-        "avg_dps": 150548397
+        "name": "Strongwind",
+        "icon": "strongwind",
+        "min": 46902470,
+        "max": 169693737,
+        "avg_dps": 144397471
       },
       {
         "name": "Static Ball",
@@ -122,130 +157,95 @@
         "avg_dps": 143576271
       },
       {
-        "name": "Void",
-        "icon": "void",
-        "min": 52362263,
-        "max": 188795897,
-        "avg_dps": 143392641
-      },
-      {
-        "name": "Flame Ball",
-        "icon": "flame_ball",
-        "min": 42204581,
-        "max": 152716724,
-        "avg_dps": 129947536
+        "name": "Ice Missile",
+        "icon": "ice_missile",
+        "min": 46391396,
+        "max": 167851581,
+        "avg_dps": 142828651
       },
       {
         "name": "EVA Storm",
         "icon": "eva_storm",
-        "min": 39906581,
-        "max": 143903578,
-        "avg_dps": 122540106
-      },
-      {
-        "name": "Wind Cutter",
-        "icon": "wind_cutter",
-        "min": 38053024,
-        "max": 137641904,
-        "avg_dps": 117129952
-      },
-      {
-        "name": "Windfield",
-        "icon": "windfield",
-        "min": 41770451,
-        "max": 150897931,
-        "avg_dps": 114560619
-      },
-      {
-        "name": "Swordwind",
-        "icon": "swordwind",
-        "min": 32808801,
-        "max": 118762687,
-        "avg_dps": 101047658
-      },
-      {
-        "name": "Strongwind",
-        "icon": "strongwind",
-        "min": 32808801,
-        "max": 118762687,
-        "avg_dps": 101047658
+        "min": 43904882,
+        "max": 158301582,
+        "avg_dps": 134804309
       },
       {
         "name": "Astral Moon",
         "icon": "astral_moon",
-        "min": 58931217,
-        "max": 212393166,
-        "avg_dps": 99485607
+        "min": 64831981,
+        "max": 233640124,
+        "avg_dps": 109439771
       },
       {
         "name": "Mental Strike",
         "icon": "mental_strike",
-        "min": 18224234,
-        "max": 66240042,
-        "avg_dps": 56309517
-      },
-      {
-        "name": "Poison Cloud",
-        "icon": "poison_cloud",
-        "min": 70719364,
-        "max": 254978464,
-        "avg_dps": 18097942
+        "min": 20054300,
+        "max": 72871694,
+        "avg_dps": 61950662
       },
       {
         "name": "Meteor Shower",
         "icon": "meteor_shower",
-        "min": 69604822,
-        "max": 250957771,
-        "avg_dps": 15269464
+        "min": 76572948,
+        "max": 276061188,
+        "avg_dps": 16797139
       },
       {
         "name": "Blizzard",
         "icon": "blizzard",
-        "min": 31760162,
-        "max": 114716991,
-        "avg_dps": 12206429
+        "min": 34943821,
+        "max": 126196333,
+        "avg_dps": 13428346
+      },
+      {
+        "name": "Poison Cloud",
+        "icon": "poison_cloud",
+        "min": 49431119,
+        "max": 178283645,
+        "avg_dps": 12653350
       },
       {
         "name": "Sandstorm",
         "icon": "sandstorm",
-        "min": 37205114,
-        "max": 134370724,
-        "avg_dps": 11438389
+        "min": 40933268,
+        "max": 147815442,
+        "avg_dps": 12583247
       },
       {
         "name": "Lightning Storm",
         "icon": "lightning_storm",
-        "min": 42223189,
-        "max": 152383889,
-        "avg_dps": 8108628
+        "min": 46453152,
+        "max": 167629923,
+        "avg_dps": 8920128
       },
       {
         "name": "Burningfield",
         "icon": "burningfield",
-        "min": 24160986,
-        "max": 87477271,
-        "avg_dps": 7442550
+        "min": 26854032,
+        "max": 97205463,
+        "avg_dps": 8270633
       },
       {
         "name": "Spectral Javelin",
         "icon": "spectral_javelin",
-        "min": 198490877,
-        "max": 714807045,
-        "avg_dps": 5084025
+        "min": 218347607,
+        "max": 786295392,
+        "avg_dps": 5592512
       },
       {
         "name": "Stellar Vortex",
         "icon": "stellar_vortex",
-        "min": 47550546,
-        "max": 171413796,
-        "avg_dps": 2919524
+        "min": 52313243,
+        "max": 188562822,
+        "avg_dps": 3211680
       },
       {
         "name": "Flame Geyser",
         "icon": "flame_geyser",
-        "min": 20210868,
-        "max": 73951795,
-        "avg_dps": 2241071
+        "min": 22465014,
+        "max": 82177153,
+        "avg_dps": 2490483
       }
     ]
   },
@@ -667,13 +667,6 @@
     "max_pve_dmg": null,
     "skills": [
       {
-        "name": "Water Well",
-        "icon": "water_well",
-        "min": 85355268,
-        "max": 308993935,
-        "avg_dps": 262899468
-      },
-      {
         "name": "Spirit Bomb",
         "icon": "spirit_bomb",
         "min": 87935616,
@@ -681,11 +674,11 @@
         "avg_dps": 247616643
       },
       {
-        "name": "Ice Missile",
-        "icon": "ice_missile",
-        "min": 72749403,
-        "max": 262950699,
-        "avg_dps": 223800068
+        "name": "Wind Cutter",
+        "icon": "wind_cutter",
+        "min": 65781739,
+        "max": 237670002,
+        "avg_dps": 202301160
       },
       {
         "name": "Lightning Shock",
@@ -697,6 +690,13 @@
       {
         "name": "Fire Strike",
         "icon": "fire_strike",
+        "min": 65640261,
+        "max": 237670002,
+        "avg_dps": 202206842
+      },
+      {
+        "name": "Water Well",
+        "icon": "water_well",
         "min": 65640261,
         "max": 237670002,
         "avg_dps": 202206842
@@ -730,6 +730,20 @@
         "avg_dps": 173872334
       },
       {
+        "name": "Swordwind",
+        "icon": "swordwind",
+        "min": 56511473,
+        "max": 204297028,
+        "avg_dps": 173872334
+      },
+      {
+        "name": "Strongwind",
+        "icon": "strongwind",
+        "min": 56511473,
+        "max": 204297028,
+        "avg_dps": 173872334
+      },
+      {
         "name": "Static Ball",
         "icon": "static_ball",
         "min": 56511473,
@@ -744,11 +758,11 @@
         "avg_dps": 172961318
       },
       {
-        "name": "Wind Cutter",
-        "icon": "wind_cutter",
-        "min": 46024285,
-        "max": 166346074,
-        "avg_dps": 141580239
+        "name": "Ice Missile",
+        "icon": "ice_missile",
+        "min": 55943442,
+        "max": 202252129,
+        "avg_dps": 172130380
       },
       {
         "name": "Psychic Bomb",
@@ -763,20 +777,6 @@
         "min": 50264756,
         "max": 181196703,
         "avg_dps": 128592271
-      },
-      {
-        "name": "Swordwind",
-        "icon": "swordwind",
-        "min": 39535100,
-        "max": 142984988,
-        "avg_dps": 121680058
-      },
-      {
-        "name": "Strongwind",
-        "icon": "strongwind",
-        "min": 39535100,
-        "max": 142984988,
-        "avg_dps": 121680058
       },
       {
         "name": "Abra Cadabra",
