@@ -260,7 +260,8 @@
           "INT": 2445,
           "HP%": 245,
           "HP": 1346690,
-          "tier": "starter"
+          "tier": "starter",
+          "label": ""
         },
         {
           "ATK%": 866,
@@ -272,7 +273,8 @@
           "INT": 2530,
           "HP%": 375,
           "HP": 2005497,
-          "tier": "mid"
+          "tier": "mid",
+          "label": ""
         },
         {
           "ATK%": 1038,
@@ -284,7 +286,8 @@
           "INT": 2626,
           "HP%": 458,
           "HP": 2499789,
-          "tier": "end"
+          "tier": "end",
+          "label": ""
         },
         {
           "ATK%": 1354,
@@ -296,7 +299,8 @@
           "INT": 2893,
           "HP%": 531,
           "HP": 3190007,
-          "tier": "pro"
+          "tier": "pro",
+          "label": ""
         }
       ]
     }
@@ -464,7 +468,8 @@
           "INT": 413,
           "HP%": 315,
           "HP": 1578581,
-          "tier": "starter"
+          "tier": "starter",
+          "label": ""
         },
         {
           "ATK%": 585,
@@ -476,7 +481,8 @@
           "INT": 413,
           "HP%": 330,
           "HP": 1635638,
-          "tier": "mid"
+          "tier": "mid",
+          "label": ""
         },
         {
           "ATK%": 861,
@@ -488,7 +494,8 @@
           "INT": 563,
           "HP%": 425,
           "HP": 2523580,
-          "tier": "end"
+          "tier": "end",
+          "label": ""
         },
         {
           "ATK%": 1160,
@@ -500,7 +507,8 @@
           "INT": 733,
           "HP%": 473,
           "HP": 2916736,
-          "tier": "pro"
+          "tier": "pro",
+          "label": ""
         }
       ],
       "Ice Arrow": [
@@ -514,7 +522,8 @@
           "INT": 623,
           "HP%": 368,
           "HP": 2202782,
-          "tier": "pro"
+          "tier": "pro",
+          "label": ""
         }
       ]
     }
@@ -633,7 +642,8 @@
           "INT": 1113,
           "HP%": 333,
           "HP": 2330111,
-          "tier": "pro"
+          "tier": "pro",
+          "label": ""
         }
       ],
       "PvE Melee": [
@@ -647,7 +657,8 @@
           "INT": 898,
           "HP%": 235,
           "HP": 1634210,
-          "tier": "starter"
+          "tier": "starter",
+          "label": ""
         },
         {
           "ATK%": 561,
@@ -659,7 +670,8 @@
           "INT": 898,
           "HP%": 280,
           "HP": 1853731,
-          "tier": "mid"
+          "tier": "mid",
+          "label": ""
         },
         {
           "ATK%": 645,
@@ -671,7 +683,8 @@
           "INT": 963,
           "HP%": 360,
           "HP": 2337802,
-          "tier": "end"
+          "tier": "end",
+          "label": ""
         },
         {
           "ATK%": 1037,
@@ -683,7 +696,8 @@
           "INT": 1223,
           "HP%": 438,
           "HP": 3088103,
-          "tier": "pro"
+          "tier": "pro",
+          "label": ""
         }
       ]
     }
@@ -851,7 +865,8 @@
           "INT": 413,
           "HP%": 215,
           "HP": 1353221,
-          "tier": "starter"
+          "tier": "starter",
+          "label": ""
         },
         {
           "ATK%": 693,
@@ -863,7 +878,8 @@
           "INT": 413,
           "HP%": 220,
           "HP": 1374700,
-          "tier": "mid"
+          "tier": "mid",
+          "label": ""
         },
         {
           "ATK%": 769,
@@ -875,7 +891,8 @@
           "INT": 478,
           "HP%": 290,
           "HP": 1772121,
-          "tier": "end"
+          "tier": "end",
+          "label": ""
         },
         {
           "ATK%": 1103,
@@ -887,7 +904,8 @@
           "INT": 733,
           "HP%": 313,
           "HP": 2178446,
-          "tier": "pro"
+          "tier": "pro",
+          "label": ""
         }
       ],
       "Spiral Vortex": [
@@ -901,7 +919,8 @@
           "INT": 623,
           "HP%": 208,
           "HP": 1491194,
-          "tier": "pro"
+          "tier": "pro",
+          "label": ""
         }
       ]
     }
@@ -1100,20 +1119,6 @@
       }
     ],
     "build_progression": {
-      "Demonology": [
-        {
-          "ATK%": 907,
-          "PVE%": -415,
-          "ADOCH%": 160,
-          "STR": 1064,
-          "DEX": 1064,
-          "STA": 2726,
-          "INT": 2339,
-          "HP%": 634,
-          "HP": 6641921,
-          "tier": "mentadmg2"
-        }
-      ],
       "Spirit Bomb": [
         {
           "ATK%": 1003,
@@ -1125,7 +1130,8 @@
           "INT": 2901,
           "HP%": 310,
           "HP": 2056404,
-          "tier": "mid"
+          "tier": "mid",
+          "label": ""
         },
         {
           "ATK%": 1132,
@@ -1137,7 +1143,8 @@
           "INT": 3003,
           "HP%": 385,
           "HP": 2531481,
-          "tier": "end"
+          "tier": "end",
+          "label": ""
         },
         {
           "ATK%": 1425,
@@ -1149,7 +1156,8 @@
           "INT": 3225,
           "HP%": 438,
           "HP": 2921463,
-          "tier": "pro"
+          "tier": "pro",
+          "label": ""
         }
       ],
       "Psychic Square": [
@@ -1163,7 +1171,8 @@
           "INT": 2867,
           "HP%": 290,
           "HP": 1917945,
-          "tier": "starter"
+          "tier": "starter",
+          "label": ""
         }
       ]
     }
@@ -1240,7 +1249,8 @@
           "INT": 2170,
           "HP%": 340,
           "HP": 2086735,
-          "tier": "mid"
+          "tier": "mid",
+          "label": "Merka"
         },
         {
           "ATK%": 870,
@@ -1252,7 +1262,8 @@
           "INT": 2235,
           "HP%": 425,
           "HP": 2588885,
-          "tier": "end"
+          "tier": "end",
+          "label": "Merka"
         },
         {
           "ATK%": 1197,
@@ -1264,7 +1275,8 @@
           "INT": 2237,
           "HP%": 393,
           "HP": 2369920,
-          "tier": "pro"
+          "tier": "pro",
+          "label": ""
         }
       ],
       "PvE Melee": [
@@ -1278,7 +1290,8 @@
           "INT": 654,
           "HP%": 410,
           "HP": 1926076,
-          "tier": "starter"
+          "tier": "starter",
+          "label": ""
         },
         {
           "ATK%": 620,
@@ -1290,7 +1303,8 @@
           "INT": 654,
           "HP%": 435,
           "HP": 2020491,
-          "tier": "mid"
+          "tier": "mid",
+          "label": ""
         },
         {
           "ATK%": 704,
@@ -1302,7 +1316,8 @@
           "INT": 719,
           "HP%": 510,
           "HP": 2410232,
-          "tier": "end"
+          "tier": "end",
+          "label": ""
         },
         {
           "ATK%": 298,
@@ -1314,7 +1329,8 @@
           "INT": 966,
           "HP%": 1472,
           "HP": 18193824,
-          "tier": "end"
+          "tier": "end",
+          "label": "Tank"
         },
         {
           "ATK%": 965,
@@ -1326,7 +1342,8 @@
           "INT": 873,
           "HP%": 558,
           "HP": 2737984,
-          "tier": "pro"
+          "tier": "pro",
+          "label": ""
         }
       ],
       "Soul of Rhisis": [
@@ -1340,7 +1357,8 @@
           "INT": 928,
           "HP%": 325,
           "HP": 3370585,
-          "tier": "build"
+          "tier": "build",
+          "label": "Farmer"
         }
       ]
     }
@@ -1501,7 +1519,8 @@
           "INT": 438,
           "HP%": 225,
           "HP": 1264562,
-          "tier": "starter"
+          "tier": "starter",
+          "label": ""
         },
         {
           "ATK%": 510,
@@ -1513,7 +1532,8 @@
           "INT": 438,
           "HP%": 225,
           "HP": 1264562,
-          "tier": "mid"
+          "tier": "mid",
+          "label": ""
         },
         {
           "ATK%": 567,
@@ -1525,7 +1545,8 @@
           "INT": 393,
           "HP%": 230,
           "HP": 1229606,
-          "tier": "end"
+          "tier": "end",
+          "label": ""
         },
         {
           "ATK%": 1183,
@@ -1537,7 +1558,8 @@
           "INT": 763,
           "HP%": 353,
           "HP": 2179559,
-          "tier": "pro"
+          "tier": "pro",
+          "label": ""
         }
       ],
       "Cross of Blood": [
@@ -1551,7 +1573,8 @@
           "INT": 653,
           "HP%": 258,
           "HP": 1585188,
-          "tier": "pro"
+          "tier": "pro",
+          "label": ""
         }
       ]
     }
@@ -1712,7 +1735,8 @@
           "INT": 558,
           "HP%": 673,
           "HP": 3342235,
-          "tier": "pro"
+          "tier": "pro",
+          "label": ""
         }
       ],
       "PvE Melee": [
@@ -1726,7 +1750,8 @@
           "INT": 678,
           "HP%": 265,
           "HP": 1846732,
-          "tier": "starter"
+          "tier": "starter",
+          "label": ""
         },
         {
           "ATK%": 100,
@@ -1738,7 +1763,8 @@
           "INT": 513,
           "HP%": 997,
           "HP": 13469898,
-          "tier": "starter"
+          "tier": "starter",
+          "label": "Tank"
         },
         {
           "ATK%": 471,
@@ -1750,7 +1776,8 @@
           "INT": 684,
           "HP%": 275,
           "HP": 1906428,
-          "tier": "mid"
+          "tier": "mid",
+          "label": ""
         },
         {
           "ATK%": 105,
@@ -1762,7 +1789,8 @@
           "INT": 613,
           "HP%": 1101,
           "HP": 14721401,
-          "tier": "mid"
+          "tier": "mid",
+          "label": "Tank"
         },
         {
           "ATK%": 565,
@@ -1774,7 +1802,8 @@
           "INT": 749,
           "HP%": 355,
           "HP": 2419275,
-          "tier": "end"
+          "tier": "end",
+          "label": ""
         },
         {
           "ATK%": 140,
@@ -1786,7 +1815,8 @@
           "INT": 538,
           "HP%": 1195,
           "HP": 16973021,
-          "tier": "end"
+          "tier": "end",
+          "label": "Tank"
         },
         {
           "ATK%": 963,
@@ -1798,7 +1828,8 @@
           "INT": 938,
           "HP%": 438,
           "HP": 3085042,
-          "tier": "pro"
+          "tier": "pro",
+          "label": ""
         },
         {
           "ATK%": 150,
@@ -1810,7 +1841,8 @@
           "INT": 694,
           "HP%": 1397,
           "HP": 22279731,
-          "tier": "pro"
+          "tier": "pro",
+          "label": "Tank"
         }
       ]
     }
