@@ -870,6 +870,161 @@ tbody tr .dps-mini-bar-fill {
   100% { background-position: calc(200px + 100%) 0; }
 }
 
+/* ─── BUILD PROGRESSION PANEL ───────────────────────────────────── */
+.bp-panel {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-top: 24px;
+}
+
+.bp-panel-header {
+  display: flex; align-items: center;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, var(--bg3), var(--panel));
+  border-bottom: 1px solid var(--border);
+}
+
+.bp-panel-title {
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+
+.bp-tab-bar {
+  display: flex; gap: 8px; flex-wrap: wrap;
+  padding: 12px 16px;
+  background: var(--bg3);
+  border-bottom: 1px solid var(--border);
+}
+
+.bp-tab {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+.bp-tab:hover { color: var(--text-bright); border-color: var(--gold-dim); }
+.bp-tab.active { border-color: var(--gold); color: var(--gold); background: #1a1500; }
+
+.bp-single-label {
+  padding: 10px 16px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  background: var(--bg3);
+  border-bottom: 1px solid var(--border);
+}
+
+.bp-content { overflow-x: auto; }
+
+/* Build table — uses specific selectors to avoid inheriting
+   the global thead/td cursor and padding from the skill table */
+.bp-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 360px;
+}
+
+.bp-table thead tr {
+  background: #080d22;
+  border-bottom: 1px solid var(--border);
+}
+
+.bp-table thead th {
+  padding: 11px 14px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: default;
+}
+
+.bp-stat-name-col {
+  text-align: left !important;
+  color: var(--gold-dim) !important;
+  min-width: 68px;
+}
+
+.bp-tier-col { min-width: 110px; }
+
+.bp-table tbody tr {
+  border-bottom: 1px solid #0d1535;
+  transition: background 0.15s;
+}
+.bp-table tbody tr:last-child { border-bottom: none; }
+.bp-table tbody tr:hover { background: var(--panel-hover); }
+
+.bp-stat-label {
+  padding: 9px 14px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-dim);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.bp-stat-cell {
+  padding: 8px 14px;
+  vertical-align: middle;
+  min-width: 110px;
+}
+
+.bp-stat-value {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-bright);
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.bp-neg { color: #f07060; }
+
+.bp-bar-bg {
+  height: 4px;
+  background: var(--bg);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.bp-bar-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bp-label-tag {
+  display: inline-block;
+  font-size: 9px;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+  background: #1a1535;
+  border: 1px solid #3a2a60;
+  color: #b090e8;
+  padding: 1px 5px;
+  border-radius: 3px;
+  vertical-align: middle;
+  margin-left: 4px;
+  cursor: default;
+}
+
 /* ─── GLOW PULSE ─────────────────────────────────────────────────── */
 @keyframes glowPulse {
   0%, 100% { box-shadow: 0 0 8px #c8a84b30; }

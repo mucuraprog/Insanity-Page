@@ -278,6 +278,7 @@ let currentClass = CLASSES.length ? CLASSES[0].id : 'arcanist';
 let sortKey = 'avg_dps';
 let sortAsc = false;
 let maxDPS = 0;
+const activeBuild = {};
 
 function _computeMaxDPS() {
   maxDPS = Math.max(0, ...CLASSES.map(c => c.pve_dps || _topSkillDPS(c)));
@@ -372,7 +373,106 @@ function buildClassSection(cls) {
       </div>
     </div>
     ${cls.skills.length ? buildSkillTable(cls) : '<p style="color:var(--text-dim);padding:20px">No individual skill data available for this class.</p>'}
+    ${buildProgressionPanel(cls)}
   `;
+}
+
+// ─── BUILD PROGRESSION ────────────────────────────────────────────────────────
+const BP_TIER_COLORS = {
+  starter: '#4ade80',
+  mid:     '#60a5fa',
+  end:     '#c084fc',
+  pro:     '#c8a84b',
+};
+
+function _bpTierColor(tier) {
+  return BP_TIER_COLORS[tier] || '#94a3b8';
+}
+
+function _bpTierHead(tier, label) {
+  const base = tier.charAt(0).toUpperCase() + tier.slice(1);
+  if (!label) return base;
+  return `${base} <span class="bp-label-tag">${label}</span>`;
+}
+
+function switchBuildTab(btn) {
+  const classId = btn.dataset.cls;
+  const buildName = btn.dataset.build;
+  activeBuild[classId] = buildName;
+  btn.closest('.bp-tab-bar').querySelectorAll('.bp-tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const cls = CLASSES.find(c => c.id === classId);
+  const el = document.getElementById(`bp-content-${classId}`);
+  if (el && cls) el.innerHTML = _renderBuildTable(cls.build_progression[buildName]);
+}
+
+function _renderBuildTable(tiers) {
+  const STATS = ['ATK%', 'PVE%', 'ADOCH%', 'STR', 'DEX', 'STA', 'INT', 'HP%', 'HP'];
+
+  const cols = tiers.map(t => ({
+    tier:  t.tier,
+    label: t.label || null,
+    data:  t,
+    color: _bpTierColor(t.tier),
+    head:  _bpTierHead(t.tier, t.label),
+  }));
+
+  const statMax = {};
+  STATS.forEach(stat => {
+    statMax[stat] = Math.max(1, ...cols.map(c => Math.max(0, c.data[stat] || 0)));
+  });
+
+  const headerCells = cols.map(col =>
+    `<th class="bp-tier-col" style="color:${col.color}">${col.head}</th>`
+  ).join('');
+
+  const bodyRows = STATS.map(stat => {
+    const cells = cols.map(col => {
+      const val = col.data[stat] ?? 0;
+      const isNeg = val < 0;
+      const pct = Math.round(Math.max(0, val) / statMax[stat] * 100);
+      const display = stat === 'HP' ? fmtShort(val) : val.toLocaleString('en-US');
+      return `<td class="bp-stat-cell">
+        <div class="bp-stat-value${isNeg ? ' bp-neg' : ''}">${display}</div>
+        <div class="bp-bar-bg"><div class="bp-bar-fill" style="width:${pct}%;background:linear-gradient(90deg,${col.color}44,${col.color})"></div></div>
+      </td>`;
+    }).join('');
+    return `<tr><td class="bp-stat-label">${stat}</td>${cells}</tr>`;
+  }).join('');
+
+  return `
+    <div class="bp-table-wrap">
+      <table class="bp-table">
+        <thead><tr><th class="bp-stat-name-col">Stat</th>${headerCells}</tr></thead>
+        <tbody>${bodyRows}</tbody>
+      </table>
+    </div>`;
+}
+
+function buildProgressionPanel(cls) {
+  const bp = cls.build_progression;
+  if (!bp || !Object.keys(bp).length) return '';
+
+  const buildNames = Object.keys(bp);
+  if (!activeBuild[cls.id] || !bp[activeBuild[cls.id]]) activeBuild[cls.id] = buildNames[0];
+  const active = activeBuild[cls.id];
+
+  const tabBar = buildNames.length > 1
+    ? `<div class="bp-tab-bar">${buildNames.map(name =>
+        `<button class="bp-tab${name === active ? ' active' : ''}" data-cls="${cls.id}" data-build="${name}" onclick="switchBuildTab(this)">${name}</button>`
+      ).join('')}</div>`
+    : `<div class="bp-single-label">${buildNames[0]}</div>`;
+
+  return `
+    <div class="bp-panel">
+      <div class="bp-panel-header">
+        <span class="bp-panel-title">Build Progression — ${cls.name}</span>
+      </div>
+      ${tabBar}
+      <div class="bp-content" id="bp-content-${cls.id}">
+        ${_renderBuildTable(bp[active])}
+      </div>
+    </div>`;
 }
 
 function buildSkillTable(cls) {
