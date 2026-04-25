@@ -440,10 +440,8 @@ function _renderBuildTable(tiers, buildName) {
     Math.max(...tiers.map(t => t[a] || 0)) >= Math.max(...tiers.map(t => t[b] || 0)) ? a : b
   );
 
-  const emphasized = new Set([topAttr]);
-  if (isTank) {
-    emphasized.add('HP%');
-  } else {
+  const emphasized = new Set([topAttr, 'HP%']);
+  if (!isTank) {
     emphasized.add('ATK%');
     emphasized.add('PVE%');
     if (isPvEMelee) emphasized.add('ADOCH%');
