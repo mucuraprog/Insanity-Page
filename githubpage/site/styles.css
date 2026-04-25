@@ -1008,6 +1008,11 @@ tbody tr .dps-mini-bar-fill {
   transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Dimmed rows for non-emphasised stats */
+.bp-table tbody tr.bp-row-dim .bp-stat-label { color: #2e3d65; }
+.bp-table tbody tr.bp-row-dim .bp-stat-value { color: #38476e; }
+.bp-table tbody tr.bp-row-dim .bp-bar-fill   { opacity: 0.2; }
+
 .bp-label-tag {
   display: inline-block;
   font-size: 9px;

@@ -273,6 +273,14 @@ function fmtShort(n) {
   return n.toString();
 }
 
+function _fmtHP(n) {
+  if (!n && n !== 0) return '—';
+  if (n >= 1e9) return (n / 1e9).toFixed(2) + 'B';
+  if (n >= 1e6) return (n / 1e6).toFixed(2) + 'M';
+  if (n >= 1e3) return (n / 1e3).toFixed(1) + 'K';
+  return n.toString();
+}
+
 // ─── RENDER ENGINE ────────────────────────────────────────────────────────────
 let currentClass = CLASSES.length ? CLASSES[0].id : 'arcanist';
 let sortKey = 'avg_dps';
@@ -395,6 +403,18 @@ function _bpTierHead(tier, label) {
   return `${base} <span class="bp-label-tag">${label}</span>`;
 }
 
+function _splitTankBuilds(bp) {
+  const result = {};
+  for (const [name, tiers] of Object.entries(bp)) {
+    const normal = tiers.filter(t => t.label !== 'Tank');
+    const tank   = tiers.filter(t => t.label === 'Tank')
+                        .map(t => { const c = {...t}; delete c.label; return c; });
+    if (normal.length) result[name] = normal;
+    if (tank.length)   result[`${name} (Tank)`] = tank;
+  }
+  return result;
+}
+
 function switchBuildTab(btn) {
   const classId = btn.dataset.cls;
   const buildName = btn.dataset.build;
@@ -403,11 +423,31 @@ function switchBuildTab(btn) {
   btn.classList.add('active');
   const cls = CLASSES.find(c => c.id === classId);
   const el = document.getElementById(`bp-content-${classId}`);
-  if (el && cls) el.innerHTML = _renderBuildTable(cls.build_progression[buildName]);
+  if (el && cls) {
+    const bp = _splitTankBuilds(cls.build_progression);
+    el.innerHTML = _renderBuildTable(bp[buildName], buildName);
+  }
 }
 
-function _renderBuildTable(tiers) {
+function _renderBuildTable(tiers, buildName) {
   const STATS = ['ATK%', 'PVE%', 'ADOCH%', 'STR', 'DEX', 'STA', 'INT', 'HP%', 'HP'];
+
+  const isTank     = buildName.includes('(Tank)');
+  const isPvEMelee = !isTank && buildName === 'PvE Melee';
+
+  const attrStats = ['STR', 'STA', 'DEX', 'INT'];
+  const topAttr = attrStats.reduce((a, b) =>
+    Math.max(...tiers.map(t => t[a] || 0)) >= Math.max(...tiers.map(t => t[b] || 0)) ? a : b
+  );
+
+  const emphasized = new Set([topAttr]);
+  if (isTank) {
+    emphasized.add('HP%');
+  } else {
+    emphasized.add('ATK%');
+    emphasized.add('PVE%');
+    if (isPvEMelee) emphasized.add('ADOCH%');
+  }
 
   const cols = tiers.map(t => ({
     tier:  t.tier,
@@ -427,17 +467,18 @@ function _renderBuildTable(tiers) {
   ).join('');
 
   const bodyRows = STATS.map(stat => {
+    const dim = !emphasized.has(stat);
     const cells = cols.map(col => {
       const val = col.data[stat] ?? 0;
       const isNeg = val < 0;
       const pct = Math.round(Math.max(0, val) / statMax[stat] * 100);
-      const display = stat === 'HP' ? fmtShort(val) : val.toLocaleString('en-US');
+      const display = stat === 'HP' ? _fmtHP(val) : val.toLocaleString('en-US');
       return `<td class="bp-stat-cell">
         <div class="bp-stat-value${isNeg ? ' bp-neg' : ''}">${display}</div>
         <div class="bp-bar-bg"><div class="bp-bar-fill" style="width:${pct}%;background:linear-gradient(90deg,${col.color}44,${col.color})"></div></div>
       </td>`;
     }).join('');
-    return `<tr><td class="bp-stat-label">${stat}</td>${cells}</tr>`;
+    return `<tr${dim ? ' class="bp-row-dim"' : ''}><td class="bp-stat-label">${stat}</td>${cells}</tr>`;
   }).join('');
 
   return `
@@ -450,9 +491,10 @@ function _renderBuildTable(tiers) {
 }
 
 function buildProgressionPanel(cls) {
-  const bp = cls.build_progression;
-  if (!bp || !Object.keys(bp).length) return '';
+  const rawBp = cls.build_progression;
+  if (!rawBp || !Object.keys(rawBp).length) return '';
 
+  const bp = _splitTankBuilds(rawBp);
   const buildNames = Object.keys(bp);
   if (!activeBuild[cls.id] || !bp[activeBuild[cls.id]]) activeBuild[cls.id] = buildNames[0];
   const active = activeBuild[cls.id];
@@ -470,7 +512,7 @@ function buildProgressionPanel(cls) {
       </div>
       ${tabBar}
       <div class="bp-content" id="bp-content-${cls.id}">
-        ${_renderBuildTable(bp[active])}
+        ${_renderBuildTable(bp[active], active)}
       </div>
     </div>`;
 }
