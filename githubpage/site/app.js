@@ -273,11 +273,20 @@ function fmtShort(n) {
   return n.toString();
 }
 
+function _fmtHP(n) {
+  if (!n && n !== 0) return '—';
+  if (n >= 1e9) return (n / 1e9).toFixed(2) + 'B';
+  if (n >= 1e6) return (n / 1e6).toFixed(2) + 'M';
+  if (n >= 1e3) return (n / 1e3).toFixed(1) + 'K';
+  return n.toString();
+}
+
 // ─── RENDER ENGINE ────────────────────────────────────────────────────────────
 let currentClass = CLASSES.length ? CLASSES[0].id : 'arcanist';
 let sortKey = 'avg_dps';
 let sortAsc = false;
 let maxDPS = 0;
+const activeBuild = {};
 
 function _computeMaxDPS() {
   maxDPS = Math.max(0, ...CLASSES.map(c => c.pve_dps || _topSkillDPS(c)));
@@ -372,7 +381,140 @@ function buildClassSection(cls) {
       </div>
     </div>
     ${cls.skills.length ? buildSkillTable(cls) : '<p style="color:var(--text-dim);padding:20px">No individual skill data available for this class.</p>'}
+    ${buildProgressionPanel(cls)}
   `;
+}
+
+// ─── BUILD PROGRESSION ────────────────────────────────────────────────────────
+const BP_TIER_COLORS = {
+  starter: '#4ade80',
+  mid:     '#60a5fa',
+  end:     '#c084fc',
+  pro:     '#c8a84b',
+};
+
+function _bpTierColor(tier) {
+  return BP_TIER_COLORS[tier] || '#94a3b8';
+}
+
+function _bpTierHead(tier, label) {
+  const base = tier.charAt(0).toUpperCase() + tier.slice(1);
+  if (!label) return base;
+  return `${base} <span class="bp-label-tag">${label}</span>`;
+}
+
+function _splitTankBuilds(bp) {
+  const result = {};
+  for (const [name, tiers] of Object.entries(bp)) {
+    const normal = tiers.filter(t => t.label !== 'Tank');
+    const tank   = tiers.filter(t => t.label === 'Tank')
+                        .map(t => { const c = {...t}; delete c.label; return c; });
+    if (normal.length) result[name] = normal;
+    if (tank.length)   result[`${name} (Tank)`] = tank;
+  }
+  return result;
+}
+
+function switchBuildTab(btn) {
+  const classId = btn.dataset.cls;
+  const buildName = btn.dataset.build;
+  activeBuild[classId] = buildName;
+  btn.closest('.bp-tab-bar').querySelectorAll('.bp-tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const cls = CLASSES.find(c => c.id === classId);
+  const el = document.getElementById(`bp-content-${classId}`);
+  if (el && cls) {
+    const bp = _splitTankBuilds(cls.build_progression);
+    el.innerHTML = _renderBuildTable(bp[buildName], buildName);
+  }
+}
+
+function _renderBuildTable(tiers, buildName) {
+  const STATS = ['ATK%', 'PVE%', 'ADOCH%', 'STR', 'DEX', 'STA', 'INT', 'HP%', 'HP'];
+
+  const isTank     = buildName.includes('(Tank)');
+  const isPvEMelee = !isTank && buildName === 'PvE Melee';
+
+  const attrStats = ['STR', 'STA', 'DEX', 'INT'];
+  const topAttr = attrStats.reduce((a, b) =>
+    Math.max(...tiers.map(t => t[a] || 0)) >= Math.max(...tiers.map(t => t[b] || 0)) ? a : b
+  );
+
+  const emphasized = new Set([topAttr, 'HP']);
+  if (isTank) {
+    emphasized.add('HP%');
+  } else {
+    emphasized.add('ATK%');
+    emphasized.add('PVE%');
+    if (isPvEMelee) emphasized.add('ADOCH%');
+  }
+
+  const cols = tiers.map(t => ({
+    tier:  t.tier,
+    label: t.label || null,
+    data:  t,
+    color: _bpTierColor(t.tier),
+    head:  _bpTierHead(t.tier, t.label),
+  }));
+
+  const statMax = {};
+  STATS.forEach(stat => {
+    statMax[stat] = Math.max(1, ...cols.map(c => Math.max(0, c.data[stat] || 0)));
+  });
+
+  const headerCells = cols.map(col =>
+    `<th class="bp-tier-col" style="color:${col.color}">${col.head}</th>`
+  ).join('');
+
+  const bodyRows = STATS.map(stat => {
+    const dim = !emphasized.has(stat);
+    const cells = cols.map(col => {
+      const val = col.data[stat] ?? 0;
+      const isNeg = val < 0;
+      const pct = Math.round(Math.max(0, val) / statMax[stat] * 100);
+      const display = stat === 'HP' ? _fmtHP(val) : val.toLocaleString('en-US');
+      return `<td class="bp-stat-cell">
+        <div class="bp-stat-value${isNeg ? ' bp-neg' : ''}">${display}</div>
+        <div class="bp-bar-bg"><div class="bp-bar-fill" style="width:${pct}%;background:linear-gradient(90deg,${col.color}44,${col.color})"></div></div>
+      </td>`;
+    }).join('');
+    return `<tr${dim ? ' class="bp-row-dim"' : ''}><td class="bp-stat-label">${stat}</td>${cells}</tr>`;
+  }).join('');
+
+  return `
+    <div class="bp-table-wrap">
+      <table class="bp-table">
+        <thead><tr><th class="bp-stat-name-col">Stat</th>${headerCells}</tr></thead>
+        <tbody>${bodyRows}</tbody>
+      </table>
+    </div>`;
+}
+
+function buildProgressionPanel(cls) {
+  const rawBp = cls.build_progression;
+  if (!rawBp || !Object.keys(rawBp).length) return '';
+
+  const bp = _splitTankBuilds(rawBp);
+  const buildNames = Object.keys(bp);
+  if (!activeBuild[cls.id] || !bp[activeBuild[cls.id]]) activeBuild[cls.id] = buildNames[0];
+  const active = activeBuild[cls.id];
+
+  const tabBar = buildNames.length > 1
+    ? `<div class="bp-tab-bar">${buildNames.map(name =>
+        `<button class="bp-tab${name === active ? ' active' : ''}" data-cls="${cls.id}" data-build="${name}" onclick="switchBuildTab(this)">${name}</button>`
+      ).join('')}</div>`
+    : `<div class="bp-single-label">${buildNames[0]}</div>`;
+
+  return `
+    <div class="bp-panel">
+      <div class="bp-panel-header">
+        <span class="bp-panel-title">Build Progression — ${cls.name}</span>
+      </div>
+      ${tabBar}
+      <div class="bp-content" id="bp-content-${cls.id}">
+        ${_renderBuildTable(bp[active], active)}
+      </div>
+    </div>`;
 }
 
 function buildSkillTable(cls) {
