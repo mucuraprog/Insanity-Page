@@ -380,8 +380,8 @@ function buildClassSection(cls) {
           </div>` : ''}
       </div>
     </div>
-    ${cls.skills.length ? buildSkillTable(cls) : '<p style="color:var(--text-dim);padding:20px">No individual skill data available for this class.</p>'}
     ${buildProgressionPanel(cls)}
+    ${cls.skills.length ? buildSkillTable(cls) : '<p style="color:var(--text-dim);padding:20px">No individual skill data available for this class.</p>'}
   `;
 }
 
