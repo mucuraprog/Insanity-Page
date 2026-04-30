@@ -877,6 +877,7 @@ tbody tr .dps-mini-bar-fill {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
+  margin-top: 24px;
 }
 
 .bp-panel-header {
